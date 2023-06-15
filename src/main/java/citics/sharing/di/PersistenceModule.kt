@@ -1,7 +1,7 @@
 package citics.sharing.di
 
 import android.content.Context
-import com.citics.valuation.data.datasource.local.PreferenceManager
+import citics.sharing.data.datasource.local.PreferenceManager
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

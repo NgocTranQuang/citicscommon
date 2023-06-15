@@ -1,9 +1,11 @@
 package citics.sharing.di
 
 import citics.sharing.service.customadapter.NetworkResponseAdapterFactory
-import com.citics.valuation.data.datasource.local.PreferenceManager
+import citics.sharing.data.datasource.local.PreferenceManager
 import citics.sharing.service.APIService
 import citics.sharing.service.header.ApiHeadersProvider
+import citics.sharing.session.CiticsBuildConfig
+import com.sharing.BuildConfig
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -15,7 +17,6 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import timber.log.Timber
-import com.citics.cbank.BuildConfig
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
@@ -61,7 +62,8 @@ class ApiModule {
     @Provides
     fun provideRetrofit(
         client: OkHttpClient, networkResponseAdapterFactory: NetworkResponseAdapterFactory
-    ): Retrofit = Retrofit.Builder().baseUrl(BuildConfig.API_URL_C_BANK).client(client)
+    ): Retrofit = Retrofit.Builder().baseUrl(CiticsBuildConfig.BASE_URL_API_MAIN)
+        .client(client)
         .addCallAdapterFactory(networkResponseAdapterFactory).addConverterFactory(
             MoshiConverterFactory.create(
                 Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
@@ -80,7 +82,7 @@ class ApiModule {
     @Provides
     fun provideRetrofitForUploader(
         client: OkHttpClient, networkResponseAdapterFactory: NetworkResponseAdapterFactory
-    ): Retrofit = Retrofit.Builder().baseUrl(BuildConfig.API_URL_UPLOADER).client(client)
+    ): Retrofit = Retrofit.Builder().baseUrl(CiticsBuildConfig.BASE_URL_API_UPLOADER).client(client)
         .addCallAdapterFactory(networkResponseAdapterFactory).addConverterFactory(
             MoshiConverterFactory.create(
                 Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
@@ -99,7 +101,7 @@ class ApiModule {
     @Provides
     fun provideRetrofitForApiAgentSearch(
         client: OkHttpClient, networkResponseAdapterFactory: NetworkResponseAdapterFactory
-    ): Retrofit = Retrofit.Builder().baseUrl(BuildConfig.API_URL_SEARCH).client(client)
+    ): Retrofit = Retrofit.Builder().baseUrl(CiticsBuildConfig.BASE_URL_API_SEARCH).client(client)
         .addCallAdapterFactory(networkResponseAdapterFactory).addConverterFactory(
             MoshiConverterFactory.create(
                 Moshi.Builder().add(KotlinJsonAdapterFactory()).build()

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_margin_large">
+
+            <TextView
+                android:id="@+id/titleTxt"
+                style="@style/styleTextViewTitleInTab"
+                android:text="@string/vi_tri"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/df_areaChooser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:maxLines="3"
+                app:input_hint="@string/register_area"
+                app:label_icon_img="@drawable/ic_ten_duong"
+                app:label_title="@string/register_area"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleTxt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/df_sotosothua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:orientation="horizontal">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/soToTF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:tag="so_to"
+                    app:bg_radius="LEFT"
+                    app:input_hint="@string/lookup_filter_soto"
+                    app:label_icon_img="@drawable/ic_sotosothua"
+                    app:label_show_icon="true"
+                    app:label_title="@string/lookup_filter_soto"
+                    app:layout_constraintEnd_toStartOf="@id/soThuaTF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/df_areaChooser" />
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/soThuaTF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:tag="so_thua"
+                    app:bg_radius="RIGHT"
+                    app:input_hint="@string/lookup_filter_sothua"
+                    app:label_icon_img="@drawable/ic_sotosothua"
+                    app:label_show_icon="true"
+                    app:label_title="@string/lookup_filter_sothua"
+                    app:layout_constraintBottom_toBottomOf="@id/soToTF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/soToTF"
+                    app:layout_constraintTop_toTopOf="@id/soToTF" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/df_soNhaTF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:inputType="number"
+                android:tag="so_nha"
+                app:input_hint="@string/so_nha"
+                app:label_icon_img="@drawable/ic_sonha"
+                app:label_show_icon="true"
+                app:label_title="@string/so_nha"
+                app:layout_constraintEnd_toEndOf="@id/soThuaTF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/soToTF" />
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/df_tenDuongTF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:inputType="number"
+                android:tag="vi_tri_duong"
+                app:input_hint="@string/ten_duong"
+                app:label_icon_img="@drawable/ic_ten_duong"
+                app:label_show_icon="true"
+                app:label_title="@string/ten_duong"
+                app:layout_constraintEnd_toEndOf="@id/soThuaTF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/df_soNhaTF" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/df_toa_do"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:orientation="horizontal">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/viDoTF"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:tag="vi_do"
+                    app:bg_radius="LEFT"
+                    app:input_hint="@string/vi_do"
+                    app:label_icon_img="@drawable/ic_ten_duong"
+                    app:label_show_icon="true"
+                    app:label_title="@string/vi_do"
+                    app:layout_constraintEnd_toStartOf="@id/soThuaTF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/df_tenDuongTF" />
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/kinhDoTF"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:tag="kinh_do"
+                    app:bg_radius="RIGHT"
+                    app:input_hint="@string/kinh_do"
+                    app:label_icon_img="@drawable/ic_ten_duong"
+                    app:label_show_icon="true"
+                    app:label_title="@string/kinh_do"
+                    app:layout_constraintBottom_toBottomOf="@id/viDoTF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/viDoTF"
+                    app:layout_constraintTop_toTopOf="@id/viDoTF" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/df_ttcmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:inputType="number"
+                android:tag="so_nha"
+                app:input_hint="@string/tinh_trang_so_voi_c_map"
+                app:label_icon_img="@drawable/ic_map"
+                app:label_show_icon="true"
+                app:label_title="@string/tinh_trang_so_voi_c_map"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kinhDoTF" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</merge>
+

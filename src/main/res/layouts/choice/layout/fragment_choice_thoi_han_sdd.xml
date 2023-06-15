@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/system_navigation_bar">
+
+    <citics.sharing.customview.HeaderLayout
+        android:id="@+id/headerLayout"
+        style="@style/styleHeaderLayout" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:padding="@dimen/activity_margin_large" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_margin_large"
+            android:visibility="gone">
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/vNgayThangHetHan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:input_hint="@string/nnthh"
+                app:label_title="@string/nthh" />
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/vNamHetHan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:inputType="number"
+                app:input_hint="@string/nnhh"
+                app:label_title="@string/nam_het_han" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <citics.sharing.customview.ButtonUpdateLayout
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Title21Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:padding="@dimen/activity_margin_large"
+            android:text="@string/_01_vitritaisan"
+            android:textSize="@dimen/text_size_21" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <citics.sharing.customview.ThongTinLayout
+            android:id="@+id/vToSo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_margin_large"
+            android:tag="so_to"
+            app:thong_tin_layout_default_value="@string/gach"
+            app:thong_tin_layout_icon="@drawable/ic_sotosothua"
+            app:thong_tin_layout_title="@string/tbds" />
+
+        <citics.sharing.customview.ThongTinLayout
+            android:id="@+id/vThuaSo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_margin_large"
+            android:tag="so_thua"
+            app:thong_tin_layout_default_value="@string/gach"
+            app:thong_tin_layout_icon="@drawable/ic_sotosothua"
+            app:thong_tin_layout_title="@string/ts" />
+
+        <citics.sharing.customview.ThongTinLayout
+            android:id="@+id/vToaDoGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_margin_large"
+            android:tag="toa_do"
+            app:thong_tin_layout_default_value="@string/gach"
+            app:thong_tin_layout_icon="@drawable/ic_map"
+            app:thong_tin_layout_show_divider="false"
+            app:thong_tin_layout_title="@string/toa_do_google" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

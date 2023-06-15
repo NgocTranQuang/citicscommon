@@ -1,7 +1,7 @@
 package citics.sharing.utils
 
 import android.content.Context
-import com.citics.cbank.R
+import com.sharing.R
 
 enum class LoaiTaiSan(var type: Int, var typeName: String) {
     NHA_DAT(1, "nha_pho"), CAN_HO(2, "can_ho"), DAT_NEN(3, "dat_nen"), ALL(0, "all")

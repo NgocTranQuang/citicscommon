@@ -1,6 +1,6 @@
 package citics.sharing.data.repository.base
 
-import com.citics.valuation.data.datasource.local.PreferenceManager
+import citics.sharing.data.datasource.local.PreferenceManager
 import javax.inject.Inject
 import javax.inject.Singleton
 

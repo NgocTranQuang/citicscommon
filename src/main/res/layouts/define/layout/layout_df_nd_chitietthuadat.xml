@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_margin_large"
+            android:paddingBottom="@dimen/activity_margin_large">
+
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radius_normal"
+                android:backgroundTint="@color/color_bg_mdsdd"
+                android:padding="@dimen/activity_margin_large"
+                android:text="@string/chi_tiet_thua_dat" />
+
+            <citics.sharing.customview.CiticsTextChooser
+                android:id="@+id/cMucDichSuDungDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:translationZ="1dp"
+                app:text_chooser_icon_img="@drawable/ic_square_muc_dich"
+                app:text_chooser_input_hint="@string/muc_dich_su_dung_dat"
+                app:text_chooser_title="@string/muc_dich_su_dung_dat" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lnMucDichSuDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:background="@drawable/bg_radius_normal"
+                android:backgroundTint="@color/color_bg_mdsdd"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_margin_large">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/muc_dich_su_dung_dat_da_chon"
+                    android:textColor="@color/color_nhat" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMucDichSuDungDat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_large" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/tvDienTichDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:drawableStart="@drawable/arrow_zoom_out"
+                android:drawablePadding="@dimen/activity_margin_medium"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="@string/dien_tich" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDienTichDuocCongNhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_icon="@drawable/arrow_zoom_out"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/dtdcn"
+                app:thong_tin_layout_unit="@string/m2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvLand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/vDTKDCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:inputType="numberDecimal"
+                android:tag="dien_tich_khong_dc_cong_nhan"
+                app:input_hint="@string/dtkdcn"
+                app:label_end="@string/m2"
+                app:label_icon_img="@drawable/arrow_zoom_out"
+                app:label_title="@string/dtkdcn" />
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/vChieuDai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:inputType="numberDecimal"
+                android:tag="chieu_dai"
+                app:input_hint="@string/chieu_dai"
+                app:label_end="@string/m2"
+                app:label_icon_img="@drawable/ic_arrow_up_down"
+                app:label_title="@string/chieu_dai" />
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/vChieuRong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:inputType="numberDecimal"
+                android:tag="chieu_rong"
+                app:input_hint="@string/chieu_rong"
+                app:label_end="@string/m2"
+                app:label_icon_img="@drawable/ic_arrow_left_right"
+                app:label_title="@string/chieu_rong" />
+
+            <citics.sharing.customview.CiticsTextChooser
+                android:id="@+id/vHinhDang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:tag="hinh_dang"
+                app:text_chooser_icon_img="@drawable/ic_hinh_dang"
+                app:text_chooser_input_hint="@string/hinh_dang"
+                app:text_chooser_title="@string/hinh_dang" />
+
+            <citics.sharing.customview.CiticsTextChooser
+                android:id="@+id/vHuongNha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:tag="huong"
+                app:text_chooser_icon_img="@drawable/ic_mat_troi"
+                app:text_chooser_input_hint="@string/huong_nha"
+                app:text_chooser_title="@string/huong_nha" />
+
+            <citics.sharing.customview.CiticsTextChooser
+                android:id="@+id/vHinhThucSuDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:tag="hinh_thuc_su_dung"
+                app:text_chooser_icon_img="@drawable/ic_hinh_thuc_su_dung"
+                app:text_chooser_input_hint="@string/hinh_thuc_su_dung"
+                app:text_chooser_title="@string/hinh_thuc_su_dung" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/vLineBig"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_large"
+            android:background="@color/color_divider" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnChuyenDoiMucDich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_margin_large">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:text="@string/cdmd"
+                android:textFontWeight="700" />
+
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vHmcd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/arrow_zoom_out"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/hmcd"
+                app:thong_tin_layout_unit="@string/m2" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <citics.sharing.customview.CiticsTextField
+            android:id="@+id/vHeSoK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_margin_large"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:inputType="numberDecimal"
+            android:tag="dien_tich_khong_dc_cong_nhan"
+            app:input_hint="@string/he_so_k"
+            app:label_icon_img="@drawable/arrow_zoom_out"
+            app:label_title="@string/he_so_k" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnDonGiaTheoUbnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_margin_large">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:text="@string/dgubnd"
+                android:textStyle="bold" />
+
+            <citics.sharing.customview.CiticsTextChooser
+                android:id="@+id/ubndChooser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:tag="chi_tiet_thua_dat"
+                app:text_chooser_icon_img="@drawable/ic_vt_ubnd"
+                app:text_chooser_input_hint="@string/cvt"
+                app:text_chooser_title="@string/vttubnd" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDonGia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

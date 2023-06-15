@@ -5,9 +5,8 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.FragmentManager
-import com.citics.valuation.ui.activity.phuongthucnhancpoint.PhuongThucNhanCpointActivity
-import com.citics.valuation.ui.dialog.NormalDialog
-import com.citics.cbank.R
+import citics.sharing.dialog.NormalDialog
+import com.sharing.R
 
 
 object DialogUtils {
@@ -73,23 +72,9 @@ object DialogUtils {
             .setMessage(context.getString(R.string.des_dialog_het_cpoint))
             .setPositiveButton(R.string.text_button_dialog_het_cpoint) { dialog, int ->
                 dialog.dismiss()
-                context.startActivity(Intent(context, PhuongThucNhanCpointActivity::class.java))
+//                context.startActivity(Intent(context, PhuongThucNhanCpointActivity::class.java))
             }.show(fm)
 
     }
 
-    fun showDialogLoginInNewDevice(
-        context: Context,
-        deviceName: String,
-        fm: FragmentManager,
-    ) {
-        NormalDialog.Builder(context).setImage(R.drawable.ic_search)
-            .setTitle(R.string.title_dialog_hetcpoint)
-            .setMessage("Tài khoản của bạn đã được đăng nhập trên thiết bị .\nNếu bạn không thực hiện đăng nhập này, vui lòng liên hệ Citics.vn NGAY LẬP TỨC để được hỗ trợ.")
-            .setPositiveButton(R.string.i_got_it) { dialog, int ->
-                dialog.dismiss()
-                context.startActivity(Intent(context, PhuongThucNhanCpointActivity::class.java))
-            }.show(fm)
-
-    }
 }

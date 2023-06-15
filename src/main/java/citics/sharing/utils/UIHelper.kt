@@ -2,8 +2,8 @@ package citics.sharing.utils
 
 import android.content.Context
 import android.text.TextUtils
-import com.citics.cbank.R
 import citics.sharing.extension.toDate
+import com.sharing.R
 
 object UIHelper {
     fun getNgayCapNhatGia(context : Context, date : Long?) : String{

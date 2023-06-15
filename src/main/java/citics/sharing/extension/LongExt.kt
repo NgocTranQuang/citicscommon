@@ -1,7 +1,7 @@
 package citics.sharing.extension
 
 import android.icu.text.NumberFormat
-import com.citics.valuation.utils.Utils
+import citics.sharing.utils.Utils
 import java.math.BigDecimal
 import java.util.*
 import java.util.concurrent.TimeUnit

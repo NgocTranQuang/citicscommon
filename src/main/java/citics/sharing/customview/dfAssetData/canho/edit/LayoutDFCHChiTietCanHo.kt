@@ -9,25 +9,24 @@ import androidx.activity.result.ActivityResultLauncher
 import citics.sharing.data.model.response.OptionsSuggestionResponse
 import citics.sharing.data.model.response.tham_dinh.Properties
 import citics.sharing.customview.dfAssetData.nhadat.edit.BaseLayoutDF
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutDfChChitietcanhoBinding
-import com.citics.valuation.data.model.others.ChooserItem
-import com.citics.valuation.data.model.others.SelectorItem
-import com.citics.valuation.data.model.others.SingleChoiceData
+import citics.sharing.data.model.others.ChooserItem
+import citics.sharing.data.model.others.SelectorItem
+import citics.sharing.data.model.others.SingleChoiceData
 import citics.sharing.extension.getData
 import citics.sharing.extension.toListChooser
 import citics.sharing.extension.toListSelector
-import com.citics.valuation.ui.activity.choice.ChonMaCanHoActivity
+import citics.sharing.utils.KEY_BUNDLE_DATA
+import citics.sharing.utils.LIST_HUONG_NHA
+import citics.sharing.utils.LevelType
+import citics.sharing.utils.StaticDataUtils
 import com.citics.valuation.ui.activity.choice.SingleChoiceAndAddingDataActivity
 import com.citics.valuation.ui.activity.choice.SingleChoiceAndAddingDataActivity.Companion.LCH_DATA_KEY
 import com.citics.valuation.ui.activity.choice.SingleChoiceAndAddingDataActivity.Companion.LCH_TYPE_KEY
 import com.citics.valuation.ui.activity.choice.SingleChoiceAndAddingDataActivity.Companion.MCH_TYPE
 import com.citics.valuation.ui.activity.choice.SingleChoiceAndAddingDataActivity.Companion.TANG_TYPE
 import com.citics.valuation.ui.activity.choice.SingleChoiceAndAddingDataActivity.Companion.THAP_TYPE
-import com.citics.valuation.utils.KEY_BUNDLE_DATA
-import com.citics.valuation.utils.LIST_HUONG_NHA
-import com.citics.valuation.utils.LevelType
-import com.citics.valuation.utils.StaticDataUtils
+import com.sharing.R
+import com.sharing.databinding.LayoutDfChChitietcanhoBinding
 
 /**
  * Created by ChinhQT on 25/10/2022.
@@ -48,19 +47,11 @@ class LayoutDFCHChiTietCanHo @JvmOverloads constructor(
         attrs?.let {
             onClick()
         }
-
     }
 
     private fun onClick() {
         binding.vMaCanHo.onClickListener = {
-            context.startActivity(ChonMaCanHoActivity.newIntent(context, "", ""))
-//            findNavController().navigate(
-//                R.id.timCanHoFragmentThenBack,
-//                TimCanHoThenBackFragment.getArgument(
-//                    properties?.ma_du_an
-//                        ?: ""
-//                )
-//            )
+//            context.startActivity(ChonMaCanHoActivity.newIntent(context, "", ""))
         }
         binding.vLoaiCanHo.onClickListener = {
             openSingleChoiceActivity(

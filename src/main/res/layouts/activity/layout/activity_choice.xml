@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <citics.sharing.customview.HeaderLayout
+        android:id="@+id/headerLayout"
+        style="@style/styleHeaderLayout" />
+
+    <com.gturedi.views.StatefulLayout
+        android:id="@+id/statefulLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg_screen"
+        app:stfIconNoData="@drawable/ic_no_data_folder">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/sroll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lnContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:overScrollMode="never"
+                        android:padding="@dimen/activity_margin_large" />
+
+                    <citics.sharing.customview.CiticsTextField
+                        android:id="@+id/tfKhac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_margin_large"
+                        android:layout_marginEnd="@dimen/activity_margin_large"
+                        android:layout_marginBottom="@dimen/activity_margin_large"
+                        android:visibility="gone"
+                        app:input_hint="@string/vlntytk"
+                        app:label_title="@string/ntytk" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.core.widget.NestedScrollView>
+
+
+            <citics.sharing.customview.ButtonUpdateLayout
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:button_update_layout_text="@string/tiep_tuc"
+                app:cardElevation="@dimen/activity_margin_large" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.gturedi.views.StatefulLayout>
+
+
+</LinearLayout>

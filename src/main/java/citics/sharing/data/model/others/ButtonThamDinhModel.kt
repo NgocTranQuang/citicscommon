@@ -1,6 +1,6 @@
 package citics.sharing.data.model.others
 
-import com.citics.cbank.R
+import com.sharing.R
 
 
 class ButtonThamDinhModel {

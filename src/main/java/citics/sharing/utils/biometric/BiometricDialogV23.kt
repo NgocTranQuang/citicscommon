@@ -12,7 +12,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.fragment.app.DialogFragment
-import com.citics.cbank.R
+import com.sharing.R
 
 class BiometricDialogV23 : DialogFragment, View.OnClickListener {
     private var mContext: Context?=null

@@ -1,9 +1,10 @@
-package com.citics.valuation.data.datasource.local
+package citics.sharing.data.datasource.local
 
 import android.content.Context
 import android.content.SharedPreferences
+import citics.sharing.session.CiticsBuildConfig
 import citics.sharing.utils.Language
-import com.citics.cbank.BuildConfig
+import com.sharing.BuildConfig
 import javax.inject.Inject
 
 /**
@@ -12,7 +13,7 @@ import javax.inject.Inject
 class PreferenceManager @Inject constructor(context: Context) {
 
     companion object {
-        private const val PREF_PACKAGE_NAME = BuildConfig.APPLICATION_ID
+        private var PREF_PACKAGE_NAME = CiticsBuildConfig.APPLICATION_ID
         private const val PREF_KEY_IS_LOGINED = "PREF_KEY_IS_LOGINED"
         private const val PREF_KEY_JWT_TOKEN = "PREF_KEY_JWT_TOKEN"
         private const val PREF_KEY_FINGER_ID = "PREF_KEY_FINGER_ID"
@@ -178,7 +179,7 @@ class PreferenceManager @Inject constructor(context: Context) {
         )
         set(value) = pref.edit().putBoolean(PREF_KEY_IGNORE_LOOUP_INSTRUCTION_DIALOG, value).apply()
 
-    fun clearAll(){
+    fun clearAll() {
         pref.edit().clear().commit()
     }
 }

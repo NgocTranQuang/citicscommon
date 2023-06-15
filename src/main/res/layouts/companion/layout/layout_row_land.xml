@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<citics.sharing.customview.CustomViewDotLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnContentMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lntitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_square"
+                android:drawablePadding="@dimen/activity_margin_medium"
+                android:gravity="center_vertical"
+                tools:text="đất ở" />
+
+            <TextView
+                android:id="@+id/tvDienTichDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="@dimen/text_size_16"
+                tools:text="m2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_medium"
+            android:orientation="horizontal">
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/tfPHQH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                app:bg_radius="LEFT"
+                app:input_hint="@string/nhap_dien_tich"
+                app:label_end="@string/m2"
+                app:label_icon_img="@drawable/ic_phqh"
+                app:label_title="@string/phqh" />
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/tfVPQH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:input_hint="@string/nhap_dien_tich"
+                android:inputType="numberDecimal"
+                app:bg_radius="RIGHT"
+                app:label_end="@string/m2"
+                app:label_icon_img="@drawable/ic_vpqh"
+                app:label_title="@string/vpqh" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</citics.sharing.customview.CustomViewDotLayout>
+

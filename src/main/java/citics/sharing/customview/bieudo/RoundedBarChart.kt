@@ -6,7 +6,6 @@ import android.graphics.LinearGradient
 import android.graphics.RectF
 import android.graphics.Shader
 import android.util.AttributeSet
-import com.citics.cbank.R
 import com.github.mikephil.charting.animation.ChartAnimator
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.highlight.Highlight
@@ -15,6 +14,7 @@ import com.github.mikephil.charting.interfaces.datasets.IBarDataSet
 import com.github.mikephil.charting.renderer.BarChartRenderer
 import com.github.mikephil.charting.utils.Utils
 import com.github.mikephil.charting.utils.ViewPortHandler
+import com.sharing.R
 
 class RoundedBarChart : BarChart {
     constructor(context: Context?) : super(context) {}

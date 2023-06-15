@@ -2,7 +2,7 @@ package citics.sharing.service.header
 
 import android.os.Build
 import android.util.Log
-import com.citics.valuation.data.datasource.local.PreferenceManager
+import citics.sharing.data.datasource.local.PreferenceManager
 import java.util.*
 import javax.inject.Inject
 import javax.inject.Singleton

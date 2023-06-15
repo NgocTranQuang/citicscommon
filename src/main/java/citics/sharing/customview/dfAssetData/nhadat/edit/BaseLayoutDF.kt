@@ -6,14 +6,14 @@ import android.util.AttributeSet
 import android.widget.LinearLayout
 import androidx.activity.result.ActivityResultLauncher
 import citics.sharing.data.model.response.tham_dinh.Properties
-import com.citics.valuation.ui.activity.choice.MultiChoiceActivity
-import com.citics.cbank.R
-import com.citics.valuation.data.model.others.MultiChoiceData
-import com.citics.valuation.data.model.others.SelectorItem
-import com.citics.valuation.data.model.others.SingleChoiceData
-import com.citics.valuation.ui.activity.choice.SingleChoiceActivity
-import com.citics.valuation.utils.*
+import citics.sharing.activity.choice.MultiChoiceActivity
+import citics.sharing.data.model.others.MultiChoiceData
+import citics.sharing.data.model.others.SelectorItem
+import citics.sharing.data.model.others.SingleChoiceData
 import citics.sharing.extension.toMutableList
+import citics.sharing.utils.*
+import com.citics.valuation.ui.activity.choice.SingleChoiceActivity
+import com.sharing.R
 import timber.log.Timber
 
 open class BaseLayoutDF @JvmOverloads constructor(

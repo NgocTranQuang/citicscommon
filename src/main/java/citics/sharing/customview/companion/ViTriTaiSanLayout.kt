@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import citics.sharing.data.model.response.tham_dinh.Properties
-import com.citics.cbank.databinding.LayoutViTriNhatDatBinding
+import com.sharing.databinding.LayoutViTriNhatDatBinding
 
 /**
  * Created by ChinhQT on 25/10/2022.

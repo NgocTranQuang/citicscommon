@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin_large"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/styleTextViewTitleInTab"
+            android:text="@string/hien_trang_thua_dat" />
+
+        <citics.sharing.customview.CiticsTextChooser
+            android:id="@+id/vMatTienTiepGiap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:tag="mat_tien_tiep_giap"
+            app:text_chooser_icon_img="@drawable/ic_mat_tien_tiep_giap"
+            app:text_chooser_input_hint="@string/mat_tien_tiep_giap"
+            app:text_chooser_title="@string/mat_tien_tiep_giap" />
+
+        <citics.sharing.customview.CiticsTextField
+            android:id="@+id/vKhoangCachRaDuongChinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:inputType="numberDecimal"
+            android:tag="khoang_cach_ra_duong_chinh"
+            app:input_hint="@string/khoang_cach_ra_duong_chinh"
+            app:label_icon_img="@drawable/ic_huong_dong"
+            app:label_title="@string/khoang_cach_ra_duong_chinh" />
+
+        <citics.sharing.customview.TextViewDrawableSize
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:drawableStart="@drawable/ic_mat_tien_tiep_giap"
+            android:drawablePadding="@dimen/activity_margin_medium"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/duong_truoc_tai_san" />
+
+        <citics.sharing.customview.CustomViewDotLayout
+            android:id="@+id/dot1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/vDoRong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:tag="do_rong_hem_truoc_nha"
+                app:input_hint="@string/nhap_do_rong_duong_truoc_nha"
+                app:label_end="@string/m"
+                app:label_icon_img="@drawable/ic_do_rong"
+                app:label_title="@string/do_rong" />
+
+
+        </citics.sharing.customview.CustomViewDotLayout>
+
+        <citics.sharing.customview.CustomViewDotLayout
+            android:id="@+id/dot2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <citics.sharing.customview.CiticsTextChooser
+                android:id="@+id/vKetCauDuong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="ket_cau_duong"
+                app:text_chooser_icon_img="@drawable/ic_ket_cau_duong"
+                app:text_chooser_input_hint="@string/chon_loai_ket_cau_duong_truoc_tai_san"
+                app:text_chooser_title="@string/ket_cau_duong" />
+
+        </citics.sharing.customview.CustomViewDotLayout>
+
+        <citics.sharing.customview.CustomViewDotLayout
+            android:id="@+id/dot3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/vDoanNhoNhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:tag="do_rong_hem_nho_nhat"
+                app:input_hint="@string/nhap_so_met_nho_nhat"
+                app:label_end="@string/m"
+                app:label_icon_img="@drawable/ic_do_rong"
+                app:label_title="@string/doan_nho_nhat" />
+
+        </citics.sharing.customview.CustomViewDotLayout>
+
+        <citics.sharing.customview.CustomViewDotLayout
+            android:id="@+id/dot4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hide_bottom_line="true">
+
+            <citics.sharing.customview.CiticsTextField
+                android:id="@+id/vQuyHoachDuKien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:tag="quy_hoach_du_kien"
+                app:input_hint="@string/nhap_so_met_quy_hoach_du_kien"
+                app:label_end="@string/m"
+                app:label_icon_img="@drawable/ic_quy_hoach_du_kien"
+                app:label_title="@string/quy_hoach_du_kien" />
+
+        </citics.sharing.customview.CustomViewDotLayout>
+
+        <citics.sharing.customview.CiticsTextChooser
+            android:id="@+id/vKetNoiGiaoThong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:tag="ket_noi_giao_thong"
+            app:text_chooser_icon_img="@drawable/ic_ket_noi_giao_thong"
+            app:text_chooser_input_hint="@string/ket_noi_giao_thong"
+            app:text_chooser_title="@string/ket_noi_giao_thong" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnHienTrangTiepGiap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/tvDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:drawableStart="@drawable/ic_mat_tien_tiep_giap"
+                android:drawablePadding="@dimen/activity_margin_medium"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="@string/hien_trang_tiep_giap_voi_tai_san" />
+
+            <citics.sharing.customview.CustomViewDotLayout
+                android:id="@+id/dot5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/vDong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/nhttg"
+                    app:label_icon_img="@drawable/ic_huong_dong"
+                    app:label_title="@string/dong" />
+            </citics.sharing.customview.CustomViewDotLayout>
+
+            <citics.sharing.customview.CustomViewDotLayout
+                android:id="@+id/dot6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/vTay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/nhttg"
+                    app:label_icon_img="@drawable/ic_arrow_right_to_left"
+                    app:label_title="@string/tay" />
+            </citics.sharing.customview.CustomViewDotLayout>
+
+            <citics.sharing.customview.CustomViewDotLayout
+                android:id="@+id/dot7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/vNam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/nhttg"
+                    app:label_icon_img="@drawable/ic_huong_nam"
+                    app:label_title="@string/nam" />
+            </citics.sharing.customview.CustomViewDotLayout>
+
+            <citics.sharing.customview.CustomViewDotLayout
+                android:id="@+id/dot8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/vBac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/nhttg"
+                    app:label_icon_img="@drawable/ic_huong_bac"
+                    app:label_title="@string/bac" />
+            </citics.sharing.customview.CustomViewDotLayout>
+
+            <citics.sharing.customview.CustomViewDotLayout
+                android:id="@+id/dot12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/vTayBac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/nhttg"
+                    app:label_icon_img="@drawable/ic_huong_taybac"
+                    app:label_title="@string/tay_bac" />
+            </citics.sharing.customview.CustomViewDotLayout>
+
+            <citics.sharing.customview.CustomViewDotLayout
+                android:id="@+id/dot11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/vTayNam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/nhttg"
+                    app:label_icon_img="@drawable/ic_huong_tay_nam"
+                    app:label_title="@string/tay_nam" />
+            </citics.sharing.customview.CustomViewDotLayout>
+
+            <citics.sharing.customview.CustomViewDotLayout
+                android:id="@+id/dot9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/vDongBac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/nhttg"
+                    app:label_icon_img="@drawable/ic_huong_dong_bac"
+                    app:label_title="@string/dong_bac" />
+            </citics.sharing.customview.CustomViewDotLayout>
+
+            <citics.sharing.customview.CustomViewDotLayout
+                android:id="@+id/dot10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <citics.sharing.customview.CiticsTextField
+                    android:id="@+id/vDongnam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:input_hint="@string/nhttg"
+                    app:label_icon_img="@drawable/ic_huong_dongnam"
+                    app:label_title="@string/dong_nam" />
+            </citics.sharing.customview.CustomViewDotLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <citics.sharing.customview.ChooserWithChipsLayout
+            android:id="@+id/vHienTrangSuDung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            app:chooser_chip_has_other="true"
+            app:chooser_chip_icon="@drawable/ic_tab_hien_trang_thua_dat"
+            app:chooser_chip_title="@string/hien_trang_su_dung" />
+
+        <citics.sharing.customview.ChooserWithChipsLayout
+            android:id="@+id/vYeuToKhac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            app:chooser_chip_has_other="true"
+            app:chooser_chip_icon="@drawable/ic_yeu_to_khac"
+            app:chooser_chip_title="@string/yeu_to_khac" />
+
+        <citics.sharing.customview.CiticsTextChooser
+            android:id="@+id/vSoSanhVoiThucTe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:maxLines="3"
+            android:tag="so_sanh_thuc_te_yeu_to_khac"
+            app:text_chooser_icon_img="@drawable/ic_so_sanh_voi_thuc_te"
+            app:text_chooser_input_hint="@string/so_sanh_voi_thuc_te"
+            app:text_chooser_title="@string/so_sanh_voi_thuc_te" />
+
+        <citics.sharing.customview.CiticsTextField
+            android:id="@+id/vGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:maxLength="1000000"
+            android:maxLines="10"
+            app:input_hint="@string/ghi_chu_ve_thua_dat"
+            app:label_icon_img="@drawable/ic_ghi_chu"
+            app:label_title="@string/ghi_chu_ve_thua_dat" />
+
+        <citics.sharing.customview.CiticsTextField
+            android:id="@+id/vGiaThuyet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:maxLength="1000000"
+            android:maxLines="10"
+            app:input_hint="@string/gia_thuyet"
+            app:label_icon_img="@drawable/ic_ghi_chu"
+            app:label_title="@string/gia_thuyet" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

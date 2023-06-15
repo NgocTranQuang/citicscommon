@@ -7,17 +7,17 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.activity.result.ActivityResultLauncher
 import citics.sharing.customview.CustomViewDotLayout
+import citics.sharing.data.model.others.ChooserItem
+import citics.sharing.data.model.others.SelectorItem
+import citics.sharing.data.model.others.SingleChoiceData
 import citics.sharing.data.model.response.DetailUsingPurpose
 import citics.sharing.data.model.response.tham_dinh.Properties
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutDfNdHientrangthuadatBinding
-import com.citics.valuation.data.model.others.ChooserItem
-import com.citics.valuation.data.model.others.SelectorItem
-import com.citics.valuation.data.model.others.SingleChoiceData
 import citics.sharing.extension.toListChooser
 import citics.sharing.extension.toListSelector
-import com.citics.valuation.utils.LevelType
-import com.citics.valuation.utils.StaticDataUtils
+import citics.sharing.utils.LevelType
+import citics.sharing.utils.StaticDataUtils
+import com.sharing.R
+import com.sharing.databinding.LayoutDfNdHientrangthuadatBinding
 
 /**
  * Created by ChinhQT on 25/10/2022.

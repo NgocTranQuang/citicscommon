@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <citics.sharing.customview.CiticsTextField
+        android:id="@+id/dongiadato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:inputType="numberDecimal"
+        app:input_hint="@string/ndgdo"
+        app:label_end="@string/dm2"
+        app:label_icon_img="@drawable/ic_dongiathuadat"
+        app:label_title="@string/dgdo" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

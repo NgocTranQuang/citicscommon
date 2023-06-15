@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <citics.sharing.customview.HeaderLayout
+        android:id="@+id/headerLayout"
+        style="@style/styleHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:header_title="@string/empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <citics.sharing.customview.SearchLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/activity_margin_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addBtn"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_margin"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:textAllCaps="false"
+        android:textColor="@color/text_address1"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dataList"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

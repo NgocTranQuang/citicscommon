@@ -1,7 +1,7 @@
 package citics.sharing.utils
 
 import android.util.Base64
-import com.citics.cbank.BuildConfig
+import citics.sharing.session.CiticsBuildConfig
 import java.security.Key
 import java.security.KeyFactory
 import java.security.PublicKey
@@ -25,7 +25,7 @@ object RSA {
         return kf.generatePublic(
             X509EncodedKeySpec(
                 Base64.decode(
-                    BuildConfig.KEY_LOGIN, Base64.DEFAULT
+                    CiticsBuildConfig.PUBLIC_KEY_LOGIN_NOMAL, Base64.DEFAULT
                 )
             )
         )
@@ -37,7 +37,7 @@ object RSA {
         return kf.generatePublic(
             X509EncodedKeySpec(
                 Base64.decode(
-                    BuildConfig.KEY_BIO, Base64.DEFAULT
+                    CiticsBuildConfig.PUBLIC_KEY_LOGIN_BIOMETRIC, Base64.DEFAULT
                 )
             )
         )

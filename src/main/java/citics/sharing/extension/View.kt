@@ -1,5 +1,6 @@
 package citics.sharing.extension
 
+import com.sharing.R
 import android.app.Dialog
 import android.content.Context
 import android.content.res.ColorStateList
@@ -33,7 +34,6 @@ import citics.sharing.customview.TextViewUnit
 import citics.sharing.customview.ThongTinLayout
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.citics.cbank.R
 import com.google.android.gms.common.internal.Preconditions
 import com.google.android.material.chip.ChipGroup
 import com.google.android.material.divider.MaterialDivider

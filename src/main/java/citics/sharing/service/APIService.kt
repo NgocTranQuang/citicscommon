@@ -17,8 +17,8 @@ import citics.sharing.data.model.response.hoahong.HoaHongResponse
 import citics.sharing.data.model.response.tham_dinh.*
 import citics.sharing.data.model.response.tudinhgia.DeleteTSSSTSCTRequest
 import citics.sharing.service.customadapter.NetworkResponse
-import com.citics.cbank.BuildConfig
 import com.citics.valuation.data.model.response.ErrorResponse
+import com.sharing.BuildConfig
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.http.*

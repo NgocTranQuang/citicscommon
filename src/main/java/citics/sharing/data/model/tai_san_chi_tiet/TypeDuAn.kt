@@ -1,6 +1,7 @@
-package com.citics.valuation.data.model.tai_san_chi_tiet
+package citics.sharing.data.model.tai_san_chi_tiet
 
-import com.citics.cbank.R
+import com.citics.valuation.data.model.tai_san_chi_tiet.TypeDetail
+import com.sharing.R
 
 
 class TypeDuAn : TypeDetail {

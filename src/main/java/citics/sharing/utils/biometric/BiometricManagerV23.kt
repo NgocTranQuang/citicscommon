@@ -8,7 +8,7 @@ import android.security.keystore.KeyProperties
 import android.security.keystore.KeyGenParameterSpec
 import android.security.keystore.KeyPermanentlyInvalidatedException
 import androidx.core.os.CancellationSignal
-import com.citics.cbank.R
+import com.sharing.R
 import java.io.IOException
 import java.lang.RuntimeException
 import java.security.*

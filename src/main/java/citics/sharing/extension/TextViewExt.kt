@@ -8,7 +8,7 @@ import android.text.style.ClickableSpan
 import android.view.View
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import com.citics.cbank.R
+import com.sharing.R
 
 
 fun TextView.makeLinks(vararg links: Pair<String, () -> Unit>) {

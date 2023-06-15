@@ -4,28 +4,109 @@ plugins {
     id 'kotlin-parcelize'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
-    id 'com.google.gms.google-services'
-    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
-    // Add the Crashlytics Gradle plugin
-    id 'com.google.firebase.crashlytics'
 }
 
 android {
     namespace 'com.sharing'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         minSdk 28
-        targetSdk 32
+        targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
 
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+//    }
+
     buildTypes {
+
+        debug {
+            debuggable true
+//            buildConfigField "String", "API_URL_UPLOADER", "\"${project.findProperty("CITICS_API_UPLOAD_DEV") ?: ""}\""
+//            buildConfigField "String", "API_URL_C_BANK", "\"${project.findProperty("CITICS_API_DEV") ?: ""}\""
+//            buildConfigField "String", "API_URL_SEARCH", "\"${project.findProperty("CITICS_API_DEV_SEARCH") ?: ""}\""
+//            buildConfigField "String", "KEY_LOGIN", "\"${project.findProperty("CITICS_PUBLIC_KEY_LOGIN") ?: ""}\""
+//            buildConfigField "String", "KEY_BIO", "\"${project.findProperty("CITICS_PUBLIC_KEY_BIO") ?: ""}\""
+//            buildConfigField "String", "CITICS_WEBSITE", "\"${project.findProperty("CITICS_WEBSITE") ?: ""}\""
+//            resValue "string", "map_api_key", (project.findProperty("GOOGLE_SERVICES_API_KEY_DEV") ?: "")
+//
+//            buildConfigField "String", "messenger_api", "\"${project.findProperty("CITICS_MESSENGER_API_DEV") ?: ""}\""
+//            buildConfigField "String", "google_maps_api", "\"${project.findProperty("GOOGLE_MAPS_API") ?: ""}\""
+//            buildConfigField "String", "endpoint_mqtt", "\"${project.findProperty("CITICS_MQTT_DEV") ?: ""}\""
+//            buildConfigField "String", "default_login", "\"tp.tindung@citics.vn\""
+//            buildConfigField "String", "default_password", "\"Citics.vn@1233\""
+//            buildConfigField "String", "default_lat", "\"10.769274232058889\""
+//            buildConfigField "String", "default_lng", "\"106.67871196977671\""
+//            buildConfigField "String", "play_store_url", "\"${project.findProperty("PLAY_STORE_URL") ?: ""}\""
+//
+//            buildConfigField "String", "endpoint_api_valuer", "\"${project.findProperty("CITICS_API_DEV_VALUER") ?: ""}\""
+//            buildConfigField "String", "endpoint_mqtt_valuer", "\"${project.findProperty("CITICS_MQTT_DEV_VALUER") ?: ""}\""
+//            buildConfigField "String", "endpoint_upload_valuer", "\"${project.findProperty("CITICS_API_UPLOAD_DEV_VALUER") ?: ""}\""
+
+            buildConfigField "String", "endpoint_new_login", "\"${project.findProperty("CITICS_API_NEW_LOGIN_DEV") ?: ""}\""
+            buildConfigField "String", "endpoint_new_bio", "\"${project.findProperty("CITICS_API_NEW_BIO_DEV") ?: ""}\""
+
+        }
+
+        stag {
+            initWith debug
+
+//            buildConfigField "String", "API_URL_UPLOADER", "\"${project.findProperty("CITICS_API_UPLOAD_STAG") ?: ""}\""
+//            buildConfigField "String", "API_URL_C_BANK", "\"${project.findProperty("CITICS_API_STAG") ?: ""}\""
+//            buildConfigField "String", "API_URL_SEARCH", "\"${project.findProperty("CITICS_API_STAG_SEARCH") ?: ""}\""
+//            buildConfigField "String", "KEY_LOGIN", "\"${project.findProperty("CITICS_PUBLIC_KEY_LOGIN") ?: ""}\""
+//            buildConfigField "String", "KEY_BIO", "\"${project.findProperty("CITICS_PUBLIC_KEY_BIO") ?: ""}\""
+//            buildConfigField "String", "CITICS_WEBSITE", "\"${project.findProperty("CITICS_WEBSITE") ?: ""}\""
+//            resValue "string", "map_api_key", (project.findProperty("GOOGLE_SERVICES_API_KEY_STAG") ?: "")
+//
+//            buildConfigField "String", "messenger_api", "\"${project.findProperty("CITICS_MESSENGER_API_STAG") ?: ""}\""
+//            buildConfigField "String", "endpoint_mqtt", "\"${project.findProperty("CITICS_MQTT_STAG") ?: ""}\""
+//            buildConfigField "String", "default_login", "\"\""
+//            buildConfigField "String", "default_password", "\"\""
+//            buildConfigField "String", "default_lat", "\"\""
+//            buildConfigField "String", "default_lng", "\"\""
+
+            buildConfigField "String", "endpoint_new_login", "\"${project.findProperty("CITICS_API_NEW_LOGIN_STAG") ?: ""}\""
+            buildConfigField "String", "endpoint_new_bio", "\"${project.findProperty("CITICS_API_NEW_BIO_STAG") ?: ""}\""
+
+
+        }
+
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            initWith debug
+            debuggable false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+
+//            buildConfigField "String", "API_URL_UPLOADER", "\"${project.findProperty("CITICS_API_UPLOAD_PROD") ?: ""}\""
+//            buildConfigField "String", "API_URL_C_BANK", "\"${project.findProperty("CITICS_API_PROD") ?: ""}\""
+//            buildConfigField "String", "API_URL_SEARCH", "\"${project.findProperty("CITICS_API_PROD_SEARCH") ?: ""}\""
+//            buildConfigField "String", "KEY_LOGIN", "\"${project.findProperty("CITICS_PUBLIC_KEY_LOGIN") ?: ""}\""
+//            buildConfigField "String", "KEY_BIO", "\"${project.findProperty("CITICS_PUBLIC_KEY_BIO") ?: ""}\""
+//            buildConfigField "String", "CITICS_WEBSITE", "\"${project.findProperty("CITICS_WEBSITE") ?: ""}\""
+//            resValue "string", "map_api_key", (project.findProperty("GOOGLE_SERVICES_API_KEY_PROD") ?: "")
+//
+//
+//            buildConfigField "String", "messenger_api", "\"${project.findProperty("CITICS_MESSENGER_API_PROD") ?: ""}\""
+//            buildConfigField "String", "endpoint_mqtt", "\"${project.findProperty("CITICS_MQTT_PROD") ?: ""}\""
+//            buildConfigField "String", "default_login", "\"\""
+//            buildConfigField "String", "default_password", "\"\""
+//            buildConfigField "String", "default_lat", "\"\""
+//            buildConfigField "String", "default_lng", "\"\""
+//
+//            buildConfigField "String", "endpoint_api_valuer", "\"${project.findProperty("CITICS_API_PROD_VALUER") ?: ""}\""
+//            buildConfigField "String", "endpoint_mqtt_valuer", "\"${project.findProperty("CITICS_MQTT_PROD_VALUER") ?: ""}\""
+//            buildConfigField "String", "endpoint_upload_valuer", "\"${project.findProperty("CITICS_API_UPLOAD_PROD_VALUER") ?: ""}\""
+
+            buildConfigField "String", "endpoint_new_login", "\"${project.findProperty("CITICS_API_NEW_LOGIN_PROD") ?: ""}\""
+            buildConfigField "String", "endpoint_new_bio", "\"${project.findProperty("CITICS_API_NEW_BIO_PROD") ?: ""}\""
+
         }
     }
     compileOptions {
@@ -42,10 +123,13 @@ android {
     sourceSets {
         main {
             res {
-                srcDirs 'src/main/res','src/main/res/layouts', 'src/main/res/layouts/companion', 'src/main/res/layouts/dialog'
+                srcDirs 'src/main/res','src/main/res/layouts', 'src/main/res/layouts/companion', 'src/main/res/layouts/dialog', 'src/main/res/layouts/define', 'src/main/res/layouts/activity', 'src/main/res/layouts/choice'
             }
         }
     }
+}
+hilt {
+    enableAggregatingTask = true
 }
 
 dependencies {
@@ -57,6 +141,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+    // Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     // This is a logger
     implementation 'com.jakewharton.timber:timber:5.0.1'
 
