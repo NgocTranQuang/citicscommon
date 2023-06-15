@@ -15,8 +15,8 @@ import citics.sharing.data.model.response.tudinhgia.DeleteTSSSTSCTRequest
 import citics.sharing.service.customadapter.NetworkResponse
 import com.citics.valuation.data.model.response.ErrorResponse
 import citics.sharing.data.repository.base.BaseRepository
-import citics.sharing.di.ApiAgent
-import citics.sharing.di.ApiAgentSearch
+import citics.sharing.di.ApiMain
+import citics.sharing.di.ApiSearch
 import citics.sharing.service.APIService
 import okhttp3.RequestBody
 import javax.inject.Inject
@@ -28,8 +28,8 @@ import javax.inject.Singleton
 
 @Singleton
 class AssetRepository @Inject constructor(
-    @ApiAgentSearch private val apiServiceSearch: APIService,
-    @ApiAgent private val apiServiceAgent: APIService,
+    @ApiSearch private val apiServiceSearch: APIService,
+    @ApiMain private val apiServiceAgent: APIService,
 ) : BaseRepository() {
 
     suspend fun getLandDetailByLatLng(
@@ -163,7 +163,6 @@ class AssetRepository @Inject constructor(
         hasMap: HashMap<String,Any?>
     ): NetworkResponse<AssetDetailResponse, ErrorResponse> {
         return apiServiceSearch.getApartmentAsset(
-            "",
             hasMap
         )
     }

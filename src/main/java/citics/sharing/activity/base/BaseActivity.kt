@@ -51,7 +51,7 @@ abstract class BaseActivity<V : ViewBinding, VM : BaseViewModel> : AnalyticActiv
         dataListenerScope {
             viewModel.showErrorDialog.collect {
                 it?.let {
-                    showErrorDialog(it.message, it.title)
+                    showErrorDialog(it.title, it.message)
                 }
             }
         }
@@ -190,7 +190,7 @@ abstract class BaseActivity<V : ViewBinding, VM : BaseViewModel> : AnalyticActiv
         handleResponse(onLoading, onFail = {
             onFail?.invoke(it) ?: kotlin.run {
                 hideLoading()
-                showErrorDialog(it?.message, it?.title)
+                showErrorDialog(it?.title, it?.message)
             }
             (this as MutableStateFlow<Resource<T>>).emit(Resource.None())
         }) {

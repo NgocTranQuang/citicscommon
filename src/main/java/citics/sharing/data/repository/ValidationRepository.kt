@@ -12,8 +12,8 @@ import citics.sharing.data.model.response.tham_dinh.*
 import citics.sharing.service.customadapter.NetworkResponse
 import com.citics.valuation.data.model.response.ErrorResponse
 import citics.sharing.data.repository.base.BaseRepository
-import citics.sharing.di.ApiAgent
-import citics.sharing.di.ApiAgentSearch
+import citics.sharing.di.ApiMain
+import citics.sharing.di.ApiSearch
 import citics.sharing.di.ApiUploader
 import citics.sharing.service.APIService
 import okhttp3.MediaType.Companion.toMediaType
@@ -25,8 +25,8 @@ import javax.inject.Singleton
 
 @Singleton
 class ValidationRepository @Inject constructor(
-    @ApiAgent private val apiServiceAgent: APIService,
-    @ApiAgentSearch private val apiServiceSearch: APIService,
+    @ApiMain private val apiServiceAgent: APIService,
+    @ApiSearch private val apiServiceSearch: APIService,
     @ApiUploader private val apiServiceForUploader: APIService
 ) : BaseRepository() {
 

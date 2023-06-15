@@ -10,8 +10,8 @@ import citics.sharing.data.model.response.tham_dinh.ResultResponse
 import citics.sharing.data.repository.base.BaseRepository
 import citics.sharing.service.customadapter.NetworkResponse
 import com.citics.valuation.data.model.response.ErrorResponse
-import citics.sharing.di.ApiAgent
-import citics.sharing.di.ApiAgentSearch
+import citics.sharing.di.ApiMain
+import citics.sharing.di.ApiSearch
 import citics.sharing.service.APIService
 import citics.sharing.utils.RSA
 import citics.sharing.utils.Utils
@@ -23,8 +23,8 @@ import javax.inject.Singleton
  */
 @Singleton
 class UserRepository @Inject constructor(
-    @ApiAgent private val apiService: APIService,
-    @ApiAgentSearch private val apiServiceSearch: APIService
+    @ApiMain private val apiService: APIService,
+    @ApiSearch private val apiServiceSearch: APIService
 ) : BaseRepository() {
 
 //    fun getListHoaHong(

@@ -237,9 +237,8 @@ interface APIService {
         @Path("id") id: String
     ): NetworkResponse<CiticsPriceChartResponse, ErrorResponse>
 
-    @GET("v2.4/asset/project/apartment.filter/{cp}")
+    @GET("v2.4/asset/project/apartment.filter/cp")
     suspend fun getApartmentAsset(
-        @Path("cp") cp: String?,
         @QueryMap filters: HashMap<String, Any?>?,
         ): NetworkResponse<AssetDetailResponse, ErrorResponse>
 

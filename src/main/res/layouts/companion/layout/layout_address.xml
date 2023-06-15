@@ -42,12 +42,13 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgFavourite"
-                android:layout_width="@dimen/dimen_30"
-                android:layout_height="27dp"
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_23"
                 app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/tvTitle"
-                app:srcCompat="@drawable/ic_favoutire" />
+                app:srcCompat="@drawable/ic_favourite_fill"
+                app:tint="@color/colorMainBlue" />
 
             <TextView
                 android:id="@+id/address1"

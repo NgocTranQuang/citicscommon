@@ -82,4 +82,6 @@
     <dimen name="dimen_12">12dp</dimen>
     <dimen name="dimen_35">35dp</dimen>
     <dimen name="dimen_75">75dp</dimen>
+    <dimen name="dimen_23">23dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
 </resources>

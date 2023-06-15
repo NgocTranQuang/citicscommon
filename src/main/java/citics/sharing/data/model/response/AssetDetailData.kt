@@ -11,6 +11,7 @@ data class AssetDetailData(
     @Json(name = "id") var id: String? = null,
     @Json(name = "level") var level: String? = null,
     @Json(name = "level_title") val level_title: String? = null,
+    @Json(name = "saved") var saved: Boolean? = null,
     @Json(name = "label") var label: String? = null,
     @Json(name = "label_title") val label_title: String? = null,
     @Json(name = "loai_tai_san") var loai_tai_san: String? = null,

@@ -6,8 +6,8 @@ import citics.sharing.data.model.response.base.BaseResponse
 import citics.sharing.service.customadapter.NetworkResponse
 import com.citics.valuation.data.model.response.ErrorResponse
 import citics.sharing.data.repository.base.BaseRepository
-import citics.sharing.di.ApiAgent
-import citics.sharing.di.ApiAgentSearch
+import citics.sharing.di.ApiMain
+import citics.sharing.di.ApiSearch
 import citics.sharing.di.ApiUploader
 import citics.sharing.service.APIService
 import citics.sharing.utils.LoaiTaiSan
@@ -20,9 +20,9 @@ import javax.inject.Singleton
  */
 @Singleton
 class GeneralRepository @Inject constructor(
-    @ApiAgentSearch private val apiServiceSearch: APIService,
+    @ApiSearch private val apiServiceSearch: APIService,
     @ApiUploader private val apiServiceForUploader: APIService,
-    @ApiAgent private val apiServiceAgent: APIService,
+    @ApiMain private val apiServiceAgent: APIService,
 ) : BaseRepository() {
 
     suspend fun getTemplate(): NetworkResponse<TemplateResponse, ErrorResponse> {

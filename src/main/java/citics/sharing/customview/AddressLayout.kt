@@ -40,11 +40,6 @@ class AddressLayout @JvmOverloads constructor(
                 } else if (direction == LoaiTaiSan.NHA_DAT.type) {
                     showUINhaDat()
                 }
-                if (showFavorite) {
-                    binding.imgFavourite.visibility = View.VISIBLE
-                } else {
-                    binding.imgFavourite.visibility = View.GONE
-                }
                 binding.imgFavourite.setOnClickListener {
                     onFavouriteClick?.invoke()
                 }
@@ -94,6 +89,18 @@ class AddressLayout @JvmOverloads constructor(
 
     fun setOnFavouriteClick(function: () -> Unit) {
         this.onFavouriteClick = function
+    }
+
+    fun setSave(saved: Boolean?) {
+        binding.imgFavourite.visibility = View.VISIBLE
+        if (saved == true) {
+            binding?.imgFavourite?.setImageResource(R.drawable.ic_favourite_fill)
+        } else if (saved == false) {
+            binding?.imgFavourite?.setImageResource(R.drawable.ic_favoutire)
+        }else{
+            binding.imgFavourite.visibility = View.GONE
+        }
+
     }
 
 }

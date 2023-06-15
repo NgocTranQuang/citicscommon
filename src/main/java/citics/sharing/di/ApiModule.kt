@@ -57,7 +57,7 @@ class ApiModule {
     fun provideNetworkResponseAdapterFactory(): NetworkResponseAdapterFactory =
         NetworkResponseAdapterFactory()
 
-    @ApiAgent
+    @ApiMain
     @Singleton
     @Provides
     fun provideRetrofit(
@@ -70,10 +70,10 @@ class ApiModule {
             )
         ).build()
 
-    @ApiAgent
+    @ApiMain
     @Singleton
     @Provides
-    fun provideApiService(@ApiAgent retrofit: Retrofit): APIService {
+    fun provideApiService(@ApiMain retrofit: Retrofit): APIService {
         return retrofit.create(APIService::class.java)
     }
 
@@ -96,7 +96,7 @@ class ApiModule {
         return retrofit.create(APIService::class.java)
     }
 
-    @ApiAgentSearch
+    @ApiSearch
     @Singleton
     @Provides
     fun provideRetrofitForApiAgentSearch(
@@ -108,10 +108,10 @@ class ApiModule {
             )
         ).build()
 
-    @ApiAgentSearch
+    @ApiSearch
     @Singleton
     @Provides
-    fun provideApiServiceForApiAgentSearch(@ApiAgentSearch retrofit: Retrofit): APIService {
+    fun provideApiServiceForApiAgentSearch(@ApiSearch retrofit: Retrofit): APIService {
         return retrofit.create(APIService::class.java)
     }
 

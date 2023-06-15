@@ -12,8 +12,8 @@ annotation class ApiUploader
 
 @Qualifier
 @Retention(AnnotationRetention.BINARY)
-annotation class ApiAgent
+annotation class ApiMain
 
 @Qualifier
 @Retention(AnnotationRetention.BINARY)
-annotation class ApiAgentSearch
+annotation class ApiSearch
