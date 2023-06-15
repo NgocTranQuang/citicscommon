@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Title21Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin_large"
+            android:text="@string/chi_tiet_du_an" />
+
+        <View
+            android:id="@+id/vDivider"
+            style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:id="@+id/lnContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_margin_large">
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDienTichDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/arrow_zoom_out"
+                app:thong_tin_layout_title="@string/dien_tich_dat"
+                app:thong_tin_layout_unit="@string/m2" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vMatDoXayDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_mat_do_xay_dung"
+                app:thong_tin_layout_title="@string/mat_do_xay_dung"
+                app:thong_tin_layout_unit="@string/pt" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vSoThap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+
+                app:thong_tin_layout_icon="@drawable/ic_so_thap"
+                app:thong_tin_layout_title="@string/so_thap" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vTongSoCanHo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_home"
+                app:thong_tin_layout_title="@string/tong_so_can_ho" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vNamXayDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+
+                app:thong_tin_layout_icon="@drawable/ic_nam_xay_dung"
+                app:thong_tin_layout_title="@string/nam_xay_dung" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vNamHoanThanh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_nam_sua_chua"
+                app:thong_tin_layout_title="@string/nam_hoan_thanh" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vSoTang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+
+                app:thong_tin_layout_icon="@drawable/ic_so_tang"
+                app:thong_tin_layout_title="@string/so_tang" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vCoCauCanHo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_co_cau_can_ho"
+                app:thong_tin_layout_title="@string/co_cau_can_ho" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vLoaiHinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_loai_hinh"
+                app:thong_tin_layout_title="@string/loai_hinh" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vThoiDiemMoBan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_thoi_diem_mo_ban"
+                app:thong_tin_layout_title="@string/thoi_diem_mo_ban" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vHienTrang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_flag"
+                app:thong_tin_layout_title="@string/hien_trang" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vPhapLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_phap_ly"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/phap_ly" />
+        </LinearLayout>
+
+    </LinearLayout>
+</merge>

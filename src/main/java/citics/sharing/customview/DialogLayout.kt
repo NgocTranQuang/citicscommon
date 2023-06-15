@@ -8,10 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
+import citics.sharing.utils.DialogType
+import com.sharing.R
+import com.sharing.databinding.LayoutBaseDialogBinding
 import timber.log.Timber
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutBaseDialogBinding
-import com.citics.valuation.utils.DialogType
 
 /**
  * Created by ChinhQT on 09/10/2022.

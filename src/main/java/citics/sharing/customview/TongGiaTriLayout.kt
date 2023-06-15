@@ -5,11 +5,11 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
+import citics.sharing.adapter.VeThuaDatAdapter
 import citics.sharing.data.model.response.DetailAdjustmentRates
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutTongGiaTriBinding
-import com.citics.valuation.adapter.tracuu.VeThuaDatAdapter
 import citics.sharing.extension.toCurrency
+import com.sharing.R
+import com.sharing.databinding.LayoutTongGiaTriBinding
 
 /**
  * Created by ChinhQT on 25/10/2022.

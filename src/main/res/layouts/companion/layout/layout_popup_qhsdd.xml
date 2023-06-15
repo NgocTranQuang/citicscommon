@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <citics.sharing.customview.TextViewDrawableSize
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/activity_margin_medium"
+        android:drawableTint="@color/white"
+        android:text="@string/qhsdd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tvLoaiDat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_medium"
+        android:textColor="@color/white"
+        tools:text="Đất ở tại đô thị" />
+
+    <TextView
+        android:id="@+id/tvThoiKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        tools:text="Thời kỳ quy hoạch 2021-2030" />
+
+    <TextView
+        android:id="@+id/tvQuyetDinhSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_medium"
+        android:textColor="@color/color_blue"
+        tools:text="Quyết định số" />
+
+
+</LinearLayout>

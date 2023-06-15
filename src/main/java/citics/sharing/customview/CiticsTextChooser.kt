@@ -13,13 +13,13 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutTextChooserBinding
 import citics.sharing.extension.restoreChildViewStates
 import citics.sharing.extension.saveChildViewStates
 import citics.sharing.extension.setTintColor
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import com.sharing.R
+import com.sharing.databinding.LayoutTextChooserBinding
 
 /**
  * Created by ChinhQT on 13/10/2022.

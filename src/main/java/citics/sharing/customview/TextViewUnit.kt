@@ -5,8 +5,8 @@ import android.content.res.TypedArray
 import android.text.TextUtils
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.citics.cbank.R
 import citics.sharing.extension.toFormat
+import com.sharing.R
 
 class TextViewUnit @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0

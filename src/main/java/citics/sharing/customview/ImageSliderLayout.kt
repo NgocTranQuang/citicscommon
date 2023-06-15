@@ -6,11 +6,11 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutImageSliderBinding
 import com.glide.slider.library.slidertypes.BaseSliderView
 import com.glide.slider.library.slidertypes.TextSliderView
 import com.glide.slider.library.tricks.ViewPagerEx
+import com.sharing.R
+import com.sharing.databinding.LayoutImageSliderBinding
 
 
 /**

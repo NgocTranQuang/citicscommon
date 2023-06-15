@@ -4,8 +4,8 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
-import com.citics.cbank.databinding.LayoutAddButtonBinding
 import com.sharing.R
+import com.sharing.databinding.LayoutAddButtonBinding
 
 
 /**

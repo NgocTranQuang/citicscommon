@@ -4,16 +4,14 @@ import android.content.Context
 import android.content.res.ColorStateList
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
-import androidx.core.content.res.ResourcesCompat
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutButtonUpdateBinding
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.CornerSize
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
+import com.sharing.R
+import com.sharing.databinding.LayoutButtonUpdateBinding
 
 
 /**

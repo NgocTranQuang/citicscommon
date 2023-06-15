@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvtdgg"
+            style="@style/Title21Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin_large"
+            android:text="@string/title_ve_thua_dat" />
+
+        <View
+            android:id="@+id/vdot1"
+            style="@style/DividerStyle" />
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/tvdcts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/activity_margin_large"
+            android:paddingEnd="@dimen/activity_margin_large">
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/lnmdss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_icon="@drawable/ic_square_muc_dich"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/muc_dich_su_dung_dat" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/lnMucDichSuDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <View
+                android:id="@+id/vdot12"
+                style="@style/DividerStyle" />
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/vds2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:layout_marginBottom="@dimen/activity_margin_large"
+                android:drawableStart="@drawable/ic_info"
+                android:drawablePadding="@dimen/activity_margin_large"
+                android:drawableTint="@color/stfImageColor"
+                android:gravity="center_vertical"
+                android:text="@string/quy_hoach_su_dung_dat"
+                android:textColor="@color/stfImageColor"
+                android:textSize="@dimen/text_size_12" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/vdraw3"
+            style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:id="@+id/lnContentvtd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/activity_margin_large"
+            android:paddingEnd="@dimen/activity_margin_large"
+            android:paddingBottom="@dimen/activity_margin_large">
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vTongDienTich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="dien_tich_dc_cong_nhan"
+
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/arrow_zoom_out"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/tong_dien_tich"
+                app:thong_tin_layout_unit="@string/m2" />
+
+            <LinearLayout
+                android:id="@+id/lnChiTietDienTichDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/activity_margin_large"
+                android:paddingBottom="@dimen/activity_margin_large">
+
+                <TextView
+                    android:id="@+id/d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/chi_tiet_dien_tich_thua_dat"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:id="@+id/imgd"
+                    android:layout_width="@dimen/size_left_arrow"
+                    android:layout_height="@dimen/size_left_arrow"
+                    android:contentDescription="@string/duong_truoc_tai_san"
+                    android:src="@drawable/ic_arrow_right"
+                    app:tint="@color/stfImageColor" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vGhiChu"
+                style="@style/DividerStyle" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vChieuDai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="chieu_dai"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_arrow_up_down"
+
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="Chiều dài"
+                app:thong_tin_layout_unit="@string/m" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vChieuRong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="chieu_rong"
+                app:thong_tin_layout_default_value="@string/gach"
+
+                app:thong_tin_layout_icon="@drawable/ic_arrow_left_right"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="Chiều rộng"
+                app:thong_tin_layout_unit="@string/m" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vHinhDang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="hinh_dang"
+                app:thong_tin_layout_default_value="@string/gach"
+
+                app:thong_tin_layout_icon="@drawable/ic_hinh_dang"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="Hình dạng" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vHuongNha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="huong"
+
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_arrow_left_right"
+                app:thong_tin_layout_title="Hướng nhà" />
+
+            <TextView
+                android:id="@+id/tvMdsdd"
+                style="@style/Title21Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                android:text="@string/hen_trang_thua_dat" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vMatTienTiepGiap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="mat_tien_tiep_giap"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_mat_tien_tiep_giap"
+                app:thong_tin_layout_title="Mặt tiền tiếp giáp" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vKhoangCachRaDuongChinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="khoang_cach_ra_duong_chinh"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_arrow_right"
+                app:thong_tin_layout_title="Khoảng cách ra đường chính"
+                app:thong_tin_layout_unit="@string/m" />
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/imged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_mat_tien_tiep_giap"
+                android:drawablePadding="@dimen/activity_margin_medium"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/activity_margin_large"
+                android:paddingBottom="@dimen/activity_margin_large"
+                android:text="@string/duong_truoc_tai_san"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:id="@+id/lncontenDORong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/activity_margin_large">
+
+                <citics.sharing.customview.ThongTinLayout
+                    android:id="@+id/vDoRong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="do_rong_duong_hem"
+                    app:thong_tin_layout_default_value="@string/gach"
+
+                    app:thong_tin_layout_icon="@drawable/ic_do_rong"
+                    app:thong_tin_layout_title="Độ rộng"
+                    app:thong_tin_layout_unit="@string/m" />
+
+                <citics.sharing.customview.ThongTinLayout
+                    android:id="@+id/vKetCauDuong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="ket_cau_duong"
+                    app:thong_tin_layout_default_value="@string/gach"
+
+                    app:thong_tin_layout_icon="@drawable/ic_ket_cau_duong"
+                    app:thong_tin_layout_title="Kết cấu đường" />
+
+                <citics.sharing.customview.ThongTinLayout
+                    android:id="@+id/vDoanNhoNhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="do_rong_hem_nho_nhat"
+                    app:thong_tin_layout_default_value="@string/gach"
+
+                    app:thong_tin_layout_icon="@drawable/ic_ket_cau_duong"
+                    app:thong_tin_layout_title="Đoạn nhỏ nhất"
+                    app:thong_tin_layout_unit="@string/m" />
+
+                <citics.sharing.customview.ThongTinLayout
+                    android:id="@+id/vQuyHoachDuKien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="quy_hoach_du_kien"
+                    app:thong_tin_layout_icon="@drawable/ic_quy_hoach_du_kien"
+                    app:thong_tin_layout_title="Quy hoạch dự kiến"
+                    app:thong_tin_layout_unit="@string/m" />
+            </LinearLayout>
+
+            <citics.sharing.customview.ThongTinLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_quy_hoach_du_kien"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="Yếu tố khác" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/lnYeuToKhac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_large"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                app:cardElevation="@dimen/dimen_4"
+                app:strokeColor="@color/color_border_cardview"
+                app:strokeWidth="1dp">
+
+                <citics.sharing.customview.TextViewDrawableSize
+                    android:id="@+id/tvEditThongTinThuaDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimen_8"
+                    android:drawableStart="@drawable/ic_square_and_pencil"
+                    android:drawableEnd="@drawable/ic_questionmark_circle"
+                    android:drawablePadding="@dimen/dimen_8"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_margin_medium"
+                    android:text="Chỉnh sửa thông tin thửa đất"
+                    android:textSize="@dimen/text_size_15" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</merge>

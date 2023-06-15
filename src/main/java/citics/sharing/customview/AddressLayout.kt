@@ -7,9 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutAddressBinding
-import com.citics.valuation.utils.LoaiTaiSan
+import citics.sharing.utils.LoaiTaiSan
+import com.sharing.R
+import com.sharing.databinding.LayoutAddressBinding
 
 
 /**

@@ -9,9 +9,9 @@ import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import citics.sharing.extension.loadByName
 import citics.sharing.extension.setHtml
+import com.sharing.R
+import com.sharing.databinding.LayoutHeaderBinding
 import timber.log.Timber
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutHeaderBinding
 
 /**
  * Created by ChinhQT on 09/10/2022.

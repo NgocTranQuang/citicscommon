@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutCustomDotBinding
+import com.sharing.R
+import com.sharing.databinding.LayoutCustomDotBinding
 
 /**
  * Created by ChinhQT on 25/10/2022.

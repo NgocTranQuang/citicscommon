@@ -5,11 +5,11 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutMultiChoiceBinding
-import com.citics.valuation.data.model.others.ChooserItem
-import com.citics.valuation.data.model.others.SelectorItem
+import citics.sharing.data.model.others.ChooserItem
+import citics.sharing.data.model.others.SelectorItem
 import citics.sharing.extension.loadByName
+import com.sharing.R
+import com.sharing.databinding.LayoutMultiChoiceBinding
 import timber.log.Timber
 
 /**

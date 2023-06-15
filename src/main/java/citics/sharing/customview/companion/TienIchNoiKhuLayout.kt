@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.widget.LinearLayout
 import citics.sharing.customview.ThongTinLayout
 import citics.sharing.data.model.response.tham_dinh.Properties
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutTienIchNoiKhuBinding
+import com.sharing.R
+import com.sharing.databinding.LayoutTienIchNoiKhuBinding
 
 /**
  * Created by ChinhQT on 25/10/2022.

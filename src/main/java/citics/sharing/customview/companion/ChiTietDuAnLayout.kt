@@ -5,11 +5,11 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import citics.sharing.data.model.response.tham_dinh.Properties
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutTraCuuChiTietDuAnBinding
 import citics.sharing.extension.toShow
 import citics.sharing.extension.toShowTime
-import com.citics.valuation.utils.UIHelper
+import citics.sharing.utils.UIHelper
+import com.sharing.R
+import com.sharing.databinding.LayoutTraCuuChiTietDuAnBinding
 
 /**
  * Created by ChinhQT on 25/10/2022.

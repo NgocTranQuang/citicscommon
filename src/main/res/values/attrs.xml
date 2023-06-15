@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CiticsTextField">
+        <attr name="label_title" format="string" />
+        <attr name="label_end" format="string" />
+        <attr name="label_show_icon" format="boolean" />
+        <attr name="label_icon_img" format="reference" />
+        <attr name="input_hint" format="string" />
+        <attr name="android:maxLength" />
+        <attr name="android:maxLines" format="integer" />
+        <attr name="android:inputType" />
+        <attr name="android:imeOptions" />
+        <attr name="is_kdvd" format="boolean" />
+        <attr name="bg_radius" format="enum">
+            <enum name="ALL" value="0" />
+            <enum name="RIGHT" value="1" />
+            <enum name="LEFT" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CiticsRadioButton">
+        <attr name="icon_img_radio" format="reference" />
+        <attr name="label_title_radio" format="string" />
+        <attr name="is_check" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomViewWithDotLayout">
+        <attr name="dot_label_title" format="string" />
+        <attr name="dot_label_end" format="string" />
+        <attr name="dot_show_icon" format="boolean" />
+        <attr name="dot_hide_line" format="boolean" />
+        <attr name="dot_icon_img" format="reference" />
+        <attr name="dot_input_hint" format="string" />
+        <attr name="dot_text_input" format="string" />
+        <attr name="dot_maxLines" format="integer" />
+
+        <attr name="dot_type" format="enum">
+            <enum name="CHOOSER" value="0" />
+            <enum name="TEXT_FIELD" value="1" />
+        </attr>
+        <attr name="android:inputType" />
+        <attr name="android:imeOptions" />
+    </declare-styleable>
+    <declare-styleable name="CustomViewDotLayout">
+        <attr name="hide_bottom_line" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ChooserWithChipsLayout">
+        <attr name="chooser_chip_icon" format="reference" />
+        <attr name="chooser_chip_title" format="string" />
+        <attr name="chooser_chip_has_other" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomRadioButton">
+        <attr name="radio_icon" format="reference" />
+        <attr name="radio_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MDSDDWithListLayout">
+        <attr name="mdsdd_icon" format="reference" />
+        <attr name="mdsdd_title" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomViewTaskThamDinhDetail">
+        <attr name="title_screen" format="string" />
+        <attr name="text_button" format="string" />
+        <attr name="hide_content" format="boolean" />
+        <attr name="show_reason_chooser" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="HeaderLayout">
+        <attr name="header_title" format="string" />
+        <attr name="header_right_button_show" format="boolean" />
+        <attr name="header_sub_text_show" format="boolean" />
+        <attr name="right_icon_img" format="reference" />
+        <attr name="left_icon_img" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CiticsTextChooser">
+        <attr name="text_chooser_title" format="string" />
+        <attr name="text_chooser_icon_img" format="reference" />
+        <attr name="text_input" format="reference" />
+        <attr name="text_chooser_input_hint" format="string" />
+        <attr name="android:maxLines" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="IconTextChooser">
+        <attr name="icon_text_title" format="string" />
+        <attr name="icon_text_show_icon" format="boolean" />
+        <attr name="icon_text_show_end_img" format="boolean" />
+        <attr name="icon_text_show_line" format="boolean" />
+        <attr name="icon_text_icon_img" format="reference" />
+        <attr name="icon_text_tint_img" format="color" />
+        <attr name="icon_text_show_tint_end_icon" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="IconTextWarningChooser">
+        <attr name="icon_text_warning_title" format="string" />
+        <attr name="icon_text_warning_show_icon" format="boolean" />
+        <attr name="icon_text_warning_show_end_img" format="boolean" />
+        <attr name="icon_text_warning_show_line" format="boolean" />
+        <attr name="icon_text_warning_icon_img" format="reference" />
+        <attr name="icon_text_warning_tint_img" format="color" />
+        <attr name="icon_text_warning_show_tint_end_icon" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleContentText">
+        <attr name="icon_img" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TSSSItemLayout">
+        <attr name="tsss_title" format="string" />
+        <attr name="tsss_show_icon" format="boolean" />
+        <attr name="tsss_show_end_img" format="boolean" />
+        <attr name="tsss_show_line" format="boolean" />
+        <attr name="tsss_icon_img" format="reference" />
+        <attr name="tsss_tint_img" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IconTextView">
+        <attr name="icon_text_view_title" format="string" />
+        <attr name="icon_text_view_show_icon" format="boolean" />
+        <attr name="icon_text_view_show_line" format="boolean" />
+        <attr name="icon_text_view_icon_img" format="reference" />
+        <attr name="icon_text_view_tint_img" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StatefulLayout">
+        <attr name="stfAnimationEnabled" format="boolean" />
+        <attr name="stfInAnimation" format="reference" />
+        <attr name="stfOutAnimation" format="reference" />
+        <attr name="stfIconNoData" format="reference" />
+        <attr name="stfMessageNoData" format="string" />
+        <attr name="stfTintImage" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchButton">
+        <attr name="text" format="reference" />
+        <attr name="android:src" />
+    </declare-styleable>
+
+    <declare-styleable name="MapControllerLayout">
+        <attr name="isZoom" format="boolean" />
+        <attr name="isSatellite" format="boolean" />
+        <attr name="isMyLocation" format="boolean" />
+        <attr name="isInfo" format="boolean" />
+        <attr name="isReload" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AreaSearch">
+        <attr name="android:hint" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchLayout">
+        <attr name="android:hint" />
+    </declare-styleable>
+
+    <declare-styleable name="LandInfoLayout">
+        <attr name="havePrice" format="boolean" />
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="FromToLayout">
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MapTypeLayout">
+        <attr name="isNormalMap" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ListLoaiPhapLyLayout">
+        <attr name="showButtonAdd" format="boolean" />
+        <attr name="allowSwipeToDelete" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ListDanhMucHinhAnhLayout">
+        <attr name="ha_showButtonAdd" format="boolean" />
+        <attr name="ha_allowSwipeToDelete" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ToaDoLayout">
+        <attr name="isShowButton" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LayoutMultiChoice">
+        <attr name="layout_multi_choice_icon" format="reference" />
+        <attr name="layout_multi_choice_title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="VeThuaDatLayout">
+        <attr name="ve_thua_dat_icon" format="reference" />
+        <attr name="ve_thua_dat_title" format="string" />
+        <attr name="ve_thua_dat_show_divider" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ThongTinDinhGia">
+        <attr name="thong_tin_dinh_gia_icon" format="reference" />
+        <attr name="thong_tin_dinh_gia_title" format="string" />
+        <attr name="thong_tin_dinh_gia_show_divider" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ThongTinGiaLayout">
+        <attr name="thong_tin_gia_icon" format="reference" />
+        <attr name="thong_tin_gia_title" format="string" />
+        <attr name="thong_tin_gia_show_divider" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ThongTinLayout">
+        <attr name="thong_tin_layout_icon" format="reference" />
+        <attr name="thong_tin_layout_title" format="string" />
+        <attr name="thong_tin_layout_default_value" format="string" />
+        <attr name="thong_tin_layout_show_divider" format="boolean" />
+        <attr name="thong_tin_layout_unit" format="string" />
+        <attr name="thong_tin_layout_is_bold" format="boolean" />
+        <attr name="thong_tin_layout_prevent_format_number" format="boolean" />
+        <attr name="thong_tin_layout_value_as_link" format="boolean" />
+        <attr name="thong_tin_layout_value" format="string" />
+        <attr name="thong_tin_layout_right_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewDrawableSize">
+        <attr name="android:drawableStart" format="reference" />
+        <attr name="drawableSizeTint" format="color|reference" />
+        <attr name="drawableSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewUnit">
+        <attr name="text_view_unit" format="string" />
+        <attr name="text_view_prevent_format_number" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageSliderLayout">
+        <attr name="isShowText" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonUpdateLayout">
+        <attr name="button_update_layout_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonAddNewLayout">
+        <attr name="button_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AddressLayout">
+        <attr name="loai_tai_san" format="enum">
+            <enum name="NHA_DAT" value="1" />
+            <enum name="CAN_HO" value="2" />
+        </attr>
+        <attr name="showFavourite" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ButtonSelectorLayout">
+        <attr name="count_of_selector" format="integer" />
+        <attr name="has_default" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AssetsTabLayout">
+        <attr name="default_selected" format="enum">
+            <enum name="ALL" value="0" />
+            <enum name="NHA_DAT" value="1" />
+            <enum name="CAN_HO" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TongGiaTriLayout">
+        <attr name="tgt_type_show" format="enum">
+            <enum name="GIA_TRI" value="0" />
+            <enum name="DON_GIA" value="1" />
+            <enum name="DIEN_TICH" value="2" />
+            <enum name="ALL" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LandPositionInfoLayout">
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="IconTextNumberChooser">
+        <attr name="icon_text_number_title" format="string" />
+        <attr name="icon_text_number_show_icon" format="boolean" />
+        <attr name="icon_text_number_show_end_img" format="boolean" />
+        <attr name="icon_text_number_show_line" format="boolean" />
+        <attr name="icon_text_number_icon_img" format="reference" />
+        <attr name="icon_text_number_tint_img" format="color" />
+        <attr name="icon_text_number_number" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchFilterLayout">
+        <attr name="android:hint" />
+        <attr name="right_icon" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="TaskStatusLayout">
+
+    </declare-styleable>
+
+    <declare-styleable name="StatusLayout">
+
+    </declare-styleable>
+
+    <declare-styleable name="PhiHoSoLayout">
+
+    </declare-styleable>
+
+    <declare-styleable name="KetQuaThamDinhLayout">
+
+    </declare-styleable>
+
+    <declare-styleable name="KhachHangLayout">
+
+    </declare-styleable>
+
+    <declare-styleable name="ListButtonThamDinhLayout">
+        <attr name="tham_dinh_is_show_progress_bar" format="boolean" />
+        <attr name="tham_dinh_is_show_time" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ThoiGianKhaoSatLayout">
+        <attr name="text_time_color" format="color" />
+        <attr name="text_title" format="string" />
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedBarChart">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+</resources>

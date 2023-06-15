@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_margin_large">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/Title18Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="@string/con_trinh_xay_dung" />
+
+    <citics.sharing.customview.ThongTinLayout
+        android:id="@+id/vLoaiCongTrinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="loai_cong_trinh"
+        app:thong_tin_layout_icon="@drawable/ic_loai_cong_trinh"
+        app:thong_tin_layout_title="@string/loai_cong_trinh" />
+
+    <citics.sharing.customview.ThongTinLayout
+        android:id="@+id/vDienTich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="dien_tich_san"
+        app:thong_tin_layout_icon="@drawable/arrow_zoom_out"
+        app:thong_tin_layout_title="@string/dien_tich"
+        app:thong_tin_layout_unit="@string/m2" />
+
+    <citics.sharing.customview.ThongTinLayout
+        android:id="@+id/vSoTang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="tang"
+        app:thong_tin_layout_icon="@drawable/ic_so_tang"
+        app:thong_tin_layout_title="Số tầng" />
+
+    <citics.sharing.customview.ThongTinLayout
+        android:id="@+id/vNamXayDung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="nam_xay_dung"
+        app:thong_tin_layout_default_value="@string/gach"
+        app:thong_tin_layout_icon="@drawable/ic_nam_xay_dung"
+        app:thong_tin_layout_prevent_format_number="true"
+        app:thong_tin_layout_title="@string/nam_xay_dung" />
+
+    <citics.sharing.customview.ThongTinLayout
+        android:id="@+id/vNamSuaChua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="nam_sua_chua"
+        app:thong_tin_layout_default_value="@string/gach"
+        app:thong_tin_layout_icon="@drawable/ic_nam_sua_chua"
+        app:thong_tin_layout_prevent_format_number="true"
+        app:thong_tin_layout_show_divider="false"
+        app:thong_tin_layout_title="@string/nam_sua_chua" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

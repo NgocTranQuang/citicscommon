@@ -5,9 +5,8 @@ import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.LayoutInflater
 import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutSearchBinding
+import com.sharing.R
+import com.sharing.databinding.LayoutSearchBinding
 
 /**
  * Created by ChinhQT on 09/10/2022.

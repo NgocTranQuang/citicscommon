@@ -10,13 +10,12 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import citics.sharing.data.model.response.Document
 import citics.sharing.data.model.response.tham_dinh.Properties
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutVeThuaDatBinding
 import citics.sharing.extension.open
 import citics.sharing.extension.setListChip
 import citics.sharing.extension.showBalloonPopup
 import citics.sharing.extension.toShow
-import com.citics.valuation.ui.activity.tracuu.ChiTietDienTichThuaDatActivity
+import com.sharing.R
+import com.sharing.databinding.LayoutVeThuaDatBinding
 
 
 /**
@@ -103,13 +102,13 @@ class VeThuaDatLayout @JvmOverloads constructor(
             }
         }
         binding.lnChiTietDienTichDat.setOnClickListener {
-            context.startActivity(
-                ChiTietDienTichThuaDatActivity.newIntent(
-                    context,
-                    data.dien_tich_dc_cong_nhan.toShow(),
-                    data.lands
-                )
-            )
+//            context.startActivity(
+//                ChiTietDienTichThuaDatActivity.newIntent(
+//                    context,
+//                    data.dien_tich_dc_cong_nhan.toShow(),
+//                    data.lands
+//                )
+//            )
 
         }
     }

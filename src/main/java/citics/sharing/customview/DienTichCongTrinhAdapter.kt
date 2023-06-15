@@ -4,11 +4,11 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import citics.sharing.adapter.base.BaseAdapter
 import citics.sharing.data.model.response.CongTrinh
-import com.citics.cbank.R
-import com.citics.cbank.databinding.RowDienTichCongTrinhBinding
-import com.citics.valuation.adapter.base.BaseAdapter
 import citics.sharing.extension.toShow
+import com.sharing.R
+import com.sharing.databinding.RowDienTichCongTrinhBinding
 
 class DienTichCongTrinhAdapter(
     context: Context,

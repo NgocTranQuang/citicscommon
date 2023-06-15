@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/addressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_large"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/color_gray"
+        app:cardCornerRadius="@dimen/dimen_20"
+        app:cardElevation="@dimen/activity_margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin_large">
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radius_lage"
+                android:backgroundTint="@color/black"
+                android:drawableStart="@drawable/ic_can_ho_white"
+                android:drawablePadding="@dimen/padding_5"
+                android:drawableTint="@color/white"
+                android:gravity="center"
+                android:paddingStart="@dimen/activity_margin_large"
+                android:paddingTop="@dimen/activity_margin_medium"
+                android:paddingEnd="@dimen/activity_margin_large"
+                android:paddingBottom="@dimen/activity_margin_medium"
+                android:text="@string/nha_dat"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgFavourite"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="27dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                app:srcCompat="@drawable/ic_favoutire" />
+
+            <TextView
+                android:id="@+id/address1"
+                style="@style/Title21Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                tools:text="32 Ngô Thì Nhậm" />
+
+            <TextView
+                android:id="@+id/address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address1"
+                tools:text="Phường An Lợi Đông, Quận 2, Thành phố Hồ Chí Minh" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</merge>

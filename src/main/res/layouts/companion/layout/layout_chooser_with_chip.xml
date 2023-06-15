@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <citics.sharing.customview.CiticsTextChooser
+            android:id="@+id/cChooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationZ="1dp"
+            app:text_chooser_icon_img="@drawable/ic_square_muc_dich"
+            app:text_chooser_input_hint="@string/hien_trang_su_dung"
+            app:text_chooser_title="@string/hien_trang_su_dung" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:background="@drawable/bg_radius_normal"
+            android:backgroundTint="@color/color_bg_mdsdd"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_margin_large">
+
+            <TextView
+                android:id="@+id/tvTitleSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/htsddc"
+                android:textColor="@color/color_nhat" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+</merge>

@@ -14,10 +14,10 @@ import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
-import com.citics.cbank.R
-import com.citics.cbank.databinding.LayoutItemThongTinBinding
 import citics.sharing.extension.makeLinks
 import citics.sharing.extension.setTintColor
+import com.sharing.R
+import com.sharing.databinding.LayoutItemThongTinBinding
 
 
 /**

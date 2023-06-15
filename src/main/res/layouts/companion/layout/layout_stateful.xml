@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/stContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_above="@+id/vRetry"
+            android:contentDescription="@string/empty"
+            android:drawableTop="@drawable/ic_no_data_folder"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:textFontWeight="700"
+            android:textSize="@dimen/text_size_21"
+            android:visibility="gone"
+            tools:text="Bạn không có data." />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vRetry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/stProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/color_blue" />
+
+            <TextView
+                android:id="@+id/stMessage"
+                style="@style/stfMessage"
+                android:layout_gravity="center"
+                android:text="@string/stf_loading"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/stButton"
+                style="@style/stfButton"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/base_margin"
+                android:paddingRight="@dimen/base_margin"
+                android:text="@string/stf_retry"
+                android:visibility="gone" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+</merge>

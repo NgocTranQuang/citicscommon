@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/line_up"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/dimen_24"
+        android:background="@color/color_divider"
+        app:layout_constraintEnd_toEndOf="@+id/dot"
+        app:layout_constraintStart_toStartOf="@id/dot"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:background="@drawable/background_circle_no_padding"
+        android:backgroundTint="@color/color_divider"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:textColor="@color/color_divider"
+        app:layout_constraintBottom_toBottomOf="@+id/line_up"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_up" />
+
+    <View
+        android:id="@+id/line_ngang"
+        android:layout_width="@dimen/activity_margin_large"
+        android:layout_height="1dp"
+        android:background="@color/color_divider"
+        app:layout_constraintBottom_toBottomOf="@id/dot"
+        app:layout_constraintStart_toEndOf="@id/line_up"
+        app:layout_constraintTop_toTopOf="@id/dot" />
+
+    <View
+        android:id="@+id/line_bottom"
+        android:layout_width="@dimen/dimen_1"
+        android:layout_height="0dp"
+        android:background="@color/color_divider"
+        app:layout_constraintBottom_toBottomOf="@+id/lnContentCustom"
+        app:layout_constraintEnd_toEndOf="@id/dot"
+        app:layout_constraintStart_toStartOf="@id/dot"
+        app:layout_constraintTop_toTopOf="@id/dot" />
+
+    <LinearLayout
+        android:id="@+id/lnContentCustom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/line_ngang"
+        app:layout_constraintTop_toTopOf="@+id/dot">
+
+    </LinearLayout>
+</merge>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Title21Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin_large"
+            android:text="@string/thong_tin_du_an" />
+
+        <View style="@style/DividerStyle" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_margin_large">
+
+            <TextView
+                android:id="@+id/tvMoTaDuAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                tools:text="You will fall in love with this beautiful Colonial with lots of curb appeal.Very appealing in and out, With New Roof (2018) New AC System (2017) hardwoods main floor, Gourmet Kitchen with an Island, Granite counter tops, Spacious 3 Bedrooms with 2 Full Baths, Walk out to a Large Deck and Patio overlooking your beautiful in Ground Pool and private Back Yard situated on a premium lot in a cul-de-sac will not disappoint.
+There are latex disposable gloves at the homes if needed.You will fall in love with this beautiful Colonial with lots of curb appeal.Very appealing in and out, With New Roof (2018) New AC System (2017) hardwoods main floor," />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDuAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_du_an"
+                app:thong_tin_layout_is_bold="false"
+                app:thong_tin_layout_title="@string/du_an" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_ten_duong"
+                app:thong_tin_layout_is_bold="false"
+                app:thong_tin_layout_title="@string/dia_chi_tai_san" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vToaDoGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_map"
+                app:thong_tin_layout_is_bold="false"
+                app:thong_tin_layout_title="@string/toa_do_google" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vChuDauTu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_du_an"
+                app:thong_tin_layout_is_bold="false"
+                app:thong_tin_layout_title="@string/chu_dau_tu" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vWebsiteDuAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_link"
+                app:thong_tin_layout_is_bold="false"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/website" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </LinearLayout>
+</merge>

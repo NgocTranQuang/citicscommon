@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lnContentgen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnContentvct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_margin_large">
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/tvvct"
+                style="@style/Title21Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_questionmark_circle"
+                android:drawablePadding="@dimen/activity_margin_medium"
+                android:text="@string/ve_cong_trinh" />
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/tvttqh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_questionmark_circle"
+                android:drawablePadding="@dimen/dimen_4"
+                android:drawableTint="@color/stfImageColor"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="@string/thong_tin_quy_hoach_xay_dung"
+                android:textColor="@color/stfImageColor"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rlContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVeCongTrinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_margin_large" />
+
+            <LinearLayout
+                android:id="@+id/lnNoCongTrinhXayDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_margin_large">
+
+                <ImageView
+                    android:id="@+id/imgNoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/d"
+                    android:src="@drawable/empty_bg" />
+
+                <TextView
+                    android:id="@+id/tvNoCongTrinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_large"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:text="@string/tai_san_nay_chua_co_thong_tin_cong_trnh_xay_dung"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvBSct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_margin_large"
+            app:cardCornerRadius="@dimen/cardview_radius"
+            app:cardElevation="@dimen/dimen_4"
+            app:strokeColor="@color/color_border_cardview"
+            app:strokeWidth="1dp">
+
+            <citics.sharing.customview.TextViewDrawableSize
+                android:id="@+id/btnBoSungCongTrinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_8"
+                android:drawableStart="@drawable/ic_square_and_pencil"
+                android:drawableEnd="@drawable/ic_questionmark_circle"
+                android:drawablePadding="@dimen/dimen_8"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:padding="@dimen/activity_margin_medium"
+                android:text="@string/bo_sung_cong_trinh_xay_dung"
+                android:textSize="@dimen/text_size_15" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <citics.sharing.customview.TextViewDrawableSize
+            android:id="@+id/rvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#20e0e0e0"
+            android:drawableStart="@drawable/ic_info_outline_white_24dp"
+            android:drawablePadding="@dimen/activity_margin_medium"
+            android:drawableTint="@color/color_text"
+            android:padding="@dimen/activity_margin_large"
+            android:text="@string/thong_bao_tham_khao" />
+
+    </LinearLayout>
+</merge>

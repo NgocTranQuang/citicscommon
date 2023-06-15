@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvChip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_medium"
+            android:layout_marginBottom="@dimen/activity_margin_medium"
+            android:background="@drawable/bg_radius_lage"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_margin_medium"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingEnd="@dimen/activity_margin_medium"
+            android:paddingBottom="@dimen/dimen_4"
+            android:textColor="@color/white"
+            tool:text="Đất ở" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/black"
+            app:chipEndPadding="@dimen/activity_margin_large"
+            app:chipStartPadding="@dimen/activity_margin_large"
+            tool:text="Đất ở" />
+
+    </LinearLayout>
+</merge>

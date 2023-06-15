@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
-import com.citics.cbank.R
+import com.sharing.R
 import timber.log.Timber
 
 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/activity_margin_large"
+            android:background="@drawable/background_button_corner"
+            android:elevation="8dip"
+            android:padding="@dimen/dimen_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back"
+            app:tint="@color/icon_normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:maxWidth="290dip"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/subtitleTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/backBtn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subtitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/quicksand_light"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:maxWidth="280dip"
+            android:textColor="@color/color_nhat"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTxt" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/rightBtn"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/background_button_corner"
+            android:elevation="8dip"
+            android:padding="10dip"
+            android:src="@drawable/ic_trash_delete"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

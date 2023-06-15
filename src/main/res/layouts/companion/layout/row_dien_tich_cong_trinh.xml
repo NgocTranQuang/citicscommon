@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/activity_margin_large">
+
+        <TextView
+            android:id="@+id/tvSTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2.1" />
+
+        <citics.sharing.customview.ThongTinLayout
+            android:id="@+id/vBonTangNoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_medium"
+            app:thong_tin_layout_default_value="@string/gach"
+            app:thong_tin_layout_show_divider="false"
+            app:thong_tin_layout_unit="@string/d" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <citics.sharing.customview.ThongTinLayout
+        android:id="@+id/vChatLuongConLai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_large"
+        android:layout_marginEnd="@dimen/activity_margin_large"
+        app:thong_tin_layout_default_value="@string/gach"
+        app:thong_tin_layout_show_divider="false"
+        app:thong_tin_layout_title="@string/chat_luong_con_lai"
+        app:thong_tin_layout_unit="%" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnExpandDCN"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgExpand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_margin_large"
+                android:src="@drawable/ic_collapsed" />
+
+            <View
+                android:layout_width="@dimen/dimen_1"
+                android:layout_height="match_parent"
+                android:background="@color/color_divider" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <citics.sharing.customview.ThongTinLayout
+            android:id="@+id/vDaCongNhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_large"
+            android:paddingEnd="@dimen/activity_margin_large"
+            app:thong_tin_layout_default_value="@string/gach"
+            app:thong_tin_layout_icon="@drawable/ic_arrow_enter"
+            app:thong_tin_layout_show_divider="false"
+            app:thong_tin_layout_title="@string/da_cong_nhan"
+            app:thong_tin_layout_unit="@string/d" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnDetailDaCongNhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin_large"
+            android:src="@drawable/ic_vpqh"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDienTich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/activity_margin_large"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/arrow_zoom_out"
+                app:thong_tin_layout_title="@string/dien_tich"
+                app:thong_tin_layout_unit="@string/m2" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDonGia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingEnd="@dimen/activity_margin_large"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_dongiathuadat"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/don_gia"
+                app:thong_tin_layout_unit="@string/dm2" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnExpandCPCHC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgExpandCPCHC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_margin_large"
+                android:src="@drawable/ic_collapsed" />
+
+            <View
+                android:layout_width="@dimen/dimen_1"
+                android:layout_height="match_parent"
+                android:background="@color/color_divider" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <citics.sharing.customview.ThongTinLayout
+            android:id="@+id/vPhepChuaHoanCong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_large"
+            android:paddingEnd="@dimen/activity_margin_large"
+            app:thong_tin_layout_default_value="@string/gach"
+            app:thong_tin_layout_icon="@drawable/ic_arrow_enter"
+            app:thong_tin_layout_show_divider="false"
+            app:thong_tin_layout_title="@string/co_phep_chua_hoan_cong"
+            app:thong_tin_layout_unit="@string/d" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnDetailCPCHC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin_large"
+            android:src="@drawable/ic_vpqh"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDienTichCPCHC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/activity_margin_large"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/arrow_zoom_out"
+                app:thong_tin_layout_title="@string/dien_tich"
+                app:thong_tin_layout_unit="@string/m2" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDonGiaCPCHC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingEnd="@dimen/activity_margin_large"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_dongiathuadat"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/don_gia"
+                app:thong_tin_layout_unit="@string/dm2" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnExpandKCP"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgExpandKCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_margin_large"
+                android:src="@drawable/ic_collapsed" />
+
+            <View
+                android:layout_width="@dimen/dimen_1"
+                android:layout_height="match_parent"
+                android:background="@color/color_divider" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <citics.sharing.customview.ThongTinLayout
+            android:id="@+id/vKhongCoPhep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_large"
+            android:paddingEnd="@dimen/activity_margin_large"
+            app:thong_tin_layout_default_value="@string/gach"
+            app:thong_tin_layout_icon="@drawable/ic_arrow_enter"
+            app:thong_tin_layout_show_divider="false"
+            app:thong_tin_layout_title="@string/khong_co_phep"
+            app:thong_tin_layout_unit="@string/d" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnDetailKCP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin_large"
+            android:src="@drawable/ic_vpqh"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDienTichKCP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/activity_margin_large"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/arrow_zoom_out"
+                app:thong_tin_layout_title="@string/dien_tich"
+                app:thong_tin_layout_unit="@string/m2" />
+
+            <citics.sharing.customview.ThongTinLayout
+                android:id="@+id/vDonGiaKCP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingEnd="@dimen/activity_margin_large"
+                app:thong_tin_layout_default_value="@string/gach"
+                app:thong_tin_layout_icon="@drawable/ic_dongiathuadat"
+                app:thong_tin_layout_show_divider="false"
+                app:thong_tin_layout_title="@string/don_gia"
+                app:thong_tin_layout_unit="@string/dm2" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
