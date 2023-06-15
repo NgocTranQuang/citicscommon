@@ -142,76 +142,77 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     // Navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    api 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    api 'androidx.navigation:navigation-ui-ktx:2.5.3'
     // This is a logger
-    implementation 'com.jakewharton.timber:timber:5.0.1'
+    api 'com.jakewharton.timber:timber:5.0.1'
 
     // Dependency Injection
-    implementation 'com.google.dagger:hilt-android:2.45'
+    api 'com.google.dagger:hilt-android:2.45'
     kapt 'com.google.dagger:hilt-android-compiler:2.45'
 
 
     // Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 
 
     // Retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api "com.squareup.retrofit2:converter-moshi:2.9.0"
+    api 'com.squareup.okhttp3:logging-interceptor:4.10.0'
 
-    implementation 'com.squareup.moshi:moshi-kotlin:1.14.0'
-    implementation 'com.squareup.moshi:moshi-kotlin-codegen:1.14.0'
+    api 'com.squareup.moshi:moshi-kotlin:1.14.0'
+    api 'com.squareup.moshi:moshi-kotlin-codegen:1.14.0'
 
 
     //Toasty
-    implementation 'com.github.GrenderG:Toasty:1.5.2'
+    api 'com.github.GrenderG:Toasty:1.5.2'
 
     //Glide
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    api 'com.github.bumptech.glide:glide:4.14.2'
     kapt 'com.github.bumptech.glide:compiler:4.14.2'
 
     // StateFull layout
-    implementation 'com.github.gturedi:StatefulLayout:1.2.2'
+    api 'com.github.gturedi:StatefulLayout:1.2.2'
 
     //Paging 3
-    implementation "androidx.paging:paging-runtime-ktx:3.1.1"
+    api "androidx.paging:paging-runtime-ktx:3.1.1"
 
     // Gson
-    implementation 'com.google.code.gson:gson:2.10.1'
+    api 'com.google.code.gson:gson:2.10.1'
 
     // Google map
-    implementation 'com.google.android.gms:play-services-maps:18.1.0'
-    implementation 'com.google.maps.android:android-maps-utils:3.4.0'
+    api 'com.google.android.gms:play-services-maps:18.1.0'
+    api 'com.google.maps.android:android-maps-utils:3.4.0'
 
     // Room DB
-    implementation "androidx.room:room-ktx:2.5.1"
-    implementation "androidx.room:room-runtime:2.5.1"
+    api "androidx.room:room-ktx:2.5.1"
+    api "androidx.room:room-runtime:2.5.1"
     kapt "androidx.room:room-compiler:2.5.1"
 
     // Biometric
-    implementation("androidx.biometric:biometric:1.2.0-alpha05")
+    api("androidx.biometric:biometric:1.2.0-alpha05")
 
     //Balon
-    implementation 'com.github.skydoves:balloon:1.5.2'
+    api 'com.github.skydoves:balloon:1.5.2'
 
     //Firebase message
-    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.2'
+    api 'com.google.firebase:firebase-messaging-ktx:23.1.2'
 
     // Firebase remote config
-    implementation 'com.google.firebase:firebase-config-ktx:21.3.0'
+    api 'com.google.firebase:firebase-config-ktx:21.3.0'
 
     // Slider image by glide
-    implementation "com.github.firdausmaulan:GlideSlider:1.5.2"
+    api "com.github.firdausmaulan:GlideSlider:1.5.2"
 
     // Textview rich drawable
-    implementation 'io.github.ahmad-hamwi:tabsync:1.0.1'
+    api 'io.github.ahmad-hamwi:tabsync:1.0.1'
 
     // Swipe layout
-    implementation 'com.github.zerobranch:SwipeLayout:1.3.1'
+    api 'com.github.zerobranch:SwipeLayout:1.3.1'
 
+    api 'me.relex:circleindicator:2.1.6'
     // MPchart
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    api 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
