@@ -120,17 +120,11 @@ class UserRepository @Inject constructor(
         return apiService.ngungTiepNhanHoSo(ngung)
     }
 
-    suspend fun registerUser(
-        name: String,
-        email: String,
-        phone: String,
-        tinhThanh: String,
-        ngheHienTai: String,
-        isDaLamThamDinh: Boolean,
-        attachments: List<String>
+    suspend fun registerUser(name: String, email: String, phone: String,
+                             bank: String, bankBranch: String, bankTransactionOffice: String
     ): NetworkResponse<RegisterResponse, ErrorResponse> {
         val body = RegisterRequest(
-            name, phone, email, tinhThanh, ngheHienTai, isDaLamThamDinh, attachments
+            name, phone, email, bank, bankBranch, bankTransactionOffice
         )
         return apiService.subscribe(body)
     }

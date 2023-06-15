@@ -237,6 +237,15 @@ abstract class BaseActivity<V : ViewBinding, VM : BaseViewModel> : AnalyticActiv
             )
         }
     }
+    fun finishMe(){
+        finishMeWithResult(0, null)
+    }
+
+    fun finishMeWithResult(code: Int, data: Intent?){
+        if(code != 0) setResult(code, data)
+        finish()
+    }
+
 
     fun setDataResult(bundle: Bundle) {
         val intent = Intent()

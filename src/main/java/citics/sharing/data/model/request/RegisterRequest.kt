@@ -7,8 +7,7 @@ data class RegisterRequest(
     val name: String,
     val phone: String,
     val email: String,
-    val city_code: String,
-    val job: String,
-    val worked: Boolean = false,
-    val attachments: List<String>
+    val bank: String,
+    val bank_branch: String,
+    val bank_address: String
 )

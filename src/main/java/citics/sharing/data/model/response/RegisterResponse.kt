@@ -11,13 +11,10 @@ data class RegisterResponse(
         val name: String,
         val phone: String,
         val email: String,
-        val job: JobResponse? = null,
-        val city_code: String,
+        val bank: String,
+        val bankBranch: String,
+        val bankAddress: String,
         val worked: Boolean,
         var city_code_violation: Boolean? = null
-    )
-
-    data class JobResponse(
-        val key: String, val name: String
     )
 }

@@ -1,5 +1,6 @@
 package citics.sharing.activity.base
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -155,6 +156,14 @@ abstract class BaseFragment<V : ViewBinding, VM : BaseViewModel>(private val bin
             handleResponseOnce(onLoading, onFail, onSuccess)
         }
     }
+    protected fun finishParentActivity(){
+        (requireActivity() as? BaseActivity<*, *>)?.finishMe()
+    }
+
+    protected fun finishParentActivityWithResult(code: Int, data: Intent?){
+        (requireActivity() as? BaseActivity<*, *>)?.finishMeWithResult(code, data)
+    }
+
 
 
     fun NavController.navigateWithAnimation(@IdRes resId: Int, args: Bundle? = null) {
