@@ -24,7 +24,7 @@
     <dimen name="register_margin">20dip</dimen>
     <dimen name="register_padding">10dip</dimen>
     <dimen name="base_margin">@dimen/base_margin_20</dimen>
-    <dimen name="base_padding">20dip</dimen>
+    <dimen name="base_padding">16dip</dimen>
     <dimen name="base_margin_10">10dip</dimen>
     <dimen name="base_margin_20">20dip</dimen>
     <dimen name="text_chooser_height">60dip</dimen>

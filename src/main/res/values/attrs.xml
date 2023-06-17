@@ -95,6 +95,15 @@
         <attr name="icon_text_show_tint_end_icon" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="IconTextSwitcher">
+        <attr name="icon_switcher_title" format="string" />
+        <attr name="icon_switcher_show_icon" format="boolean" />
+        <attr name="icon_switcher_show_line" format="boolean" />
+        <attr name="icon_switcher_icon_img" format="reference" />
+        <attr name="icon_switcher_tint_img" format="color" />
+        <attr name="icon_switcher_show_tint_end_icon" format="boolean" />
+    </declare-styleable>
+
     <declare-styleable name="IconTextWarningChooser">
         <attr name="icon_text_warning_title" format="string" />
         <attr name="icon_text_warning_show_icon" format="boolean" />

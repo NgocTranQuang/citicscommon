@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_chooser_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/titleImg"
+            android:layout_width="@dimen/text_chooser_img_size"
+            android:layout_height="@dimen/text_chooser_img_size"
+            android:layout_marginStart="5dip"
+            android:layout_marginEnd="5dip"
+            android:background="@drawable/background_circle"
+            android:contentDescription="@string/empty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/color_icon_tint" />
+
+        <TextView
+            android:id="@+id/titleLbl"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dip"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/endImg"
+            app:layout_constraintStart_toEndOf="@id/titleImg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/endImg"
+            android:layout_width="@dimen/text_chooser_img_size"
+            android:layout_height="@dimen/text_chooser_img_size"
+            android:layout_marginStart="5dip"
+            android:contentDescription="@string/empty"
+            android:padding="15dip"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/titleLbl"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/lineDivider"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/endImg"
+            app:layout_constraintStart_toStartOf="@id/titleImg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</merge>
