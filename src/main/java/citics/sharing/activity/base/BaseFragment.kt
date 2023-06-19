@@ -12,15 +12,15 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import androidx.viewbinding.ViewBinding
-import com.citics.valuation.data.model.response.ErrorResponse
+import citics.sharing.customview.HeaderLayout
 import citics.sharing.data.repository.Resource
+import citics.sharing.extension.showBalloonPopup
+import com.citics.valuation.data.model.response.ErrorResponse
+import com.sharing.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import citics.sharing.customview.HeaderLayout
-import citics.sharing.extension.showBalloonPopup
-import com.sharing.R
 
 abstract class BaseFragment<V : ViewBinding, VM : BaseViewModel>(private val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> V) :
     Fragment() {
