@@ -18,6 +18,11 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.sharing.R
 import es.dmoral.toasty.Toasty
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import java.io.File
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -130,28 +135,28 @@ fun String?.isDocument(): String? {
     return this
 }
 
-//fun MutableList<File>.toListMultiPart(
-//    context: Context
-//): MutableList<MultipartBody.Part> {
-//
-//    val parts: MutableList<MultipartBody.Part> = mutableListOf()
-//    for (i in 0 until this.size) {
-//        parts.add(this[i].toPart(context))
-//    }
-//    return parts
-//}
-//
-//fun File.toPart(context: Context, partName: String = "file"): MultipartBody.Part {
-//    val requestBody: RequestBody = asRequestBody(
-//        FileUtils.getIntentToOpenFile(
-//            context, Uri.fromFile(this)
-//        ).type?.toMediaTypeOrNull()
-//    )
-//    return MultipartBody.Part.createFormData(
-//        partName, name, requestBody
-//    )
-//}
-//
+fun MutableList<File>.toListMultiPart(
+    context: Context
+): MutableList<MultipartBody.Part> {
+
+    val parts: MutableList<MultipartBody.Part> = mutableListOf()
+    for (i in 0 until this.size) {
+        parts.add(this[i].toPart(context))
+    }
+    return parts
+}
+
+fun File.toPart(context: Context, partName: String = "file"): MultipartBody.Part {
+    val requestBody: RequestBody = asRequestBody(
+        FileUtils.getIntentToOpenFile(
+            context, Uri.fromFile(this)
+        ).type?.toMediaTypeOrNull()
+    )
+    return MultipartBody.Part.createFormData(
+        partName, name, requestBody
+    )
+}
+
 @Suppress("CAST_NEVER_SUCCEEDS")
 fun Document.open(context: Context) {
     url?.let {
