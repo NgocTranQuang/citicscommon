@@ -78,9 +78,9 @@ class IconTextChooser @JvmOverloads constructor(
                     binding.endImg.visibility = View.GONE
                 }
 
-                endImg.let {
-                    binding.endImg.setImageDrawable(it)
-                }
+//                endImg.let {
+//                    binding.endImg.setImageDrawable(it)
+//                }
 
                 binding.root.setOnClickListener {
                     onClickListener?.invoke()
