@@ -92,7 +92,9 @@
         <attr name="icon_text_show_line" format="boolean" />
         <attr name="icon_text_icon_img" format="reference" />
         <attr name="icon_text_tint_img" format="color" />
+        <attr name="icon_text_title_color" format="color" />
         <attr name="icon_text_show_tint_end_icon" format="boolean" />
+        <attr name="icon_text_end_img" format="reference" />
     </declare-styleable>
 
     <declare-styleable name="IconTextSwitcher">
