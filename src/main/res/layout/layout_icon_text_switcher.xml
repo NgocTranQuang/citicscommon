@@ -7,20 +7,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/backgroundLayout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/text_chooser_height"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="@dimen/text_chooser_height">
 
         <ImageView
             android:id="@+id/titleImg"
             android:layout_width="@dimen/text_chooser_img_size"
             android:layout_height="@dimen/text_chooser_img_size"
             android:layout_marginStart="5dip"
-            android:layout_marginEnd="5dip"
             android:background="@drawable/background_circle"
-            android:contentDescription="@string/empty"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -28,12 +22,14 @@
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/vSwitch"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/activity_margin_large"
+            android:layout_marginStart="@dimen/activity_margin_large"
             android:layout_marginVertical="@dimen/activity_margin_medium"
-            android:textColor="@color/color_text"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@id/titleImg"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 

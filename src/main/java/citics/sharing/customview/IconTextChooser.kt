@@ -48,8 +48,15 @@ class IconTextChooser @JvmOverloads constructor(
                 val tintEndColor = typedArray.getBoolean(
                     R.styleable.IconTextChooser_icon_text_show_tint_end_icon, false
                 )
+                val titleColor = typedArray.getColor(
+                    R.styleable.IconTextChooser_icon_text_title_color, ResourcesCompat.getColor(
+                        resources, R.color.black, context.theme
+                    )
+                )
+                val endImg = typedArray.getDrawable(R.styleable.IconTextChooser_icon_text_end_img)
 
                 binding.titleLbl.text = titleLbl
+                binding.titleLbl.setTextColor(titleColor)
                 if (showTitleImg) {
                     binding.titleImg.visibility = View.VISIBLE
                     binding.titleImg.imageTintList = ColorStateList.valueOf(tintColor)
@@ -69,6 +76,10 @@ class IconTextChooser @JvmOverloads constructor(
                     }
                 } else {
                     binding.endImg.visibility = View.GONE
+                }
+
+                endImg.let {
+                    binding.endImg.setImageDrawable(it)
                 }
 
                 binding.root.setOnClickListener {

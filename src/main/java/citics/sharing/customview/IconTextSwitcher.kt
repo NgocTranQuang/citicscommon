@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.CompoundButton
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
 import com.sharing.R
@@ -78,4 +79,17 @@ class IconTextSwitcher @JvmOverloads constructor(
         binding.titleImg.setImageDrawable(titleImg)
         binding.vSwitch.text = title
     }
+
+    fun isChecked(): Boolean{
+        return binding.vSwitch.isChecked
+    }
+
+    fun toggleSwitcher(){
+        binding.vSwitch.toggle()
+    }
+
+    fun setOnSwitcherCheckedChange(listener: CompoundButton.OnCheckedChangeListener){
+        binding.vSwitch.setOnCheckedChangeListener(listener)
+    }
+
 }
